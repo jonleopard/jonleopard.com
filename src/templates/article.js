@@ -8,7 +8,7 @@ import config from '../../config/website';
 
 export default function Template({ data }) {
   const disqusShortname = 'jonleopard';
-  //const disqusUrl = `https://jonleopard.com/${data.contentfulBlogPost.slug}`;
+  const disqusUrl = `https://jonleopard.com/${data.contentfulBlogPost.slug}`;
   return (
     <main>
       <article>
