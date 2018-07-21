@@ -1,39 +1,41 @@
 const path = require('path');
+const _ = require('lodash');
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
+
   return new Promise((resolve, reject) => {
-    graphql(`
-      {
-        allContentfulBlogPost {
-          edges {
-            node {
-              slug
+    const component = path.resolve('./src/templates/article.js');
+    resolve(
+      graphql(
+        `
+          {
+            allContentfulBlogPost {
+              edges {
+                node {
+                  slug
+                }
+              }
             }
           }
+        `
+      ).then(result => {
+        if (result.errors) {
+          console.log(result.errors);
+          reject(result.errors);
         }
-      }
-    `).then(result => {
-      result.data.allContentfulBlogPost.edges.forEach(({ node }) => {
-        createPage({
-          path: node.slug,
-          component: path.resolve('./src/templates/article.js'),
-          context: {
-            slug: node.slug,
-          },
+        _.forEach(result.data.allContentfulBlogPost.edges, ({ node }) => {
+          createPage({
+            path: node.slug,
+            component,
+            context: {
+              slug: node.slug,
+            },
+          });
         });
-      });
-      resolve();
-    });
+      })
+    );
   });
 };
 
-exports.modifyWebpackConfig = ({ config, env }) => {
-  config.merge({
-    resolve: {
-      root: path.resolve(__dirname, './src'),
-      extensions: ['', '.js', '.jsx', '.json'],
-    },
-  });
-  return config;
-};
+

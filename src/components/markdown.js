@@ -1,5 +1,5 @@
 import { Box } from 'grid-styled';
-import { H2 } from 'components/typography';
+import { H2 } from '../components/typography';
 
 const Markdown = Box.extend`
   color: ${props => props.theme.colors.text};
