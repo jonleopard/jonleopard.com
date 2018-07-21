@@ -1,35 +1,25 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
 import ReactDisqusComments from 'react-disqus-comments';
-import PageHeader from 'components/page-header';
-import Markdown from 'components/markdown';
+import PageHeader from '../components/page-header';
+import Markdown from '../components/markdown';
+import SEO from '../components/SEO';
+import config from '../../config/website';
 
 export default function Template({ data }) {
-  const meta = data.site.siteMetadata;
-  if (!data) return null;
-
   const disqusShortname = 'jonleopard';
-  const url = `https://jonleopard.com/${data.contentfulBlogPost.slug}`;
-
+  //const disqusUrl = `https://jonleopard.com/${data.contentfulBlogPost.slug}`;
   return (
     <main>
       <article>
-        <Helmet
-          title={`${data.contentfulBlogPost.title} - ${meta.defaultTitle}`}
-        >
-          {/* Twitter Card tags */}
-          <meta
-            name="twitter:title"
-            content={`${data.contentfulBlogPost.title} - Jon Leopard | Web Developer`}
-          />
-          <meta
-            name="twitter:description"
-            content={data.contentfulBlogPost.body.childMarkdownRemark.excerpt}
-          />
-        </Helmet>
+        <SEO
+          postPath={data.contentfulBlogPost.slug}
+          postNode={data.contentfulBlogPost}
+          postSEO
+        />
         <PageHeader
           title={data.contentfulBlogPost.title}
-          subTitle={`By ${meta.author} on ${data.contentfulBlogPost.date}`}
+          subTitle={`By ${config.author} on ${data.contentfulBlogPost.date}`}
         />
         <Markdown
           dangerouslySetInnerHTML={{
@@ -43,15 +33,22 @@ export default function Template({ data }) {
         shortname={disqusShortname}
         identifier={data.contentfulBlogPost.title}
         title={data.contentfulBlogPost.title}
-        url={url}
+        url={disqusUrl}
       />
     </main>
   );
 }
 
+Template.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object.isRequired,
+  }).isRequired,
+};
+
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
+      showcaseImage
       title
       body {
         childMarkdownRemark {
@@ -62,13 +59,6 @@ export const query = graphql`
       date(formatString: "DD MMMM YYYY")
       id
       slug
-    }
-    site {
-      siteMetadata {
-        author
-        defaultTitle
-        defaultDescription
-      }
     }
   }
 `;

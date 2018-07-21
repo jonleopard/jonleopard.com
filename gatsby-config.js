@@ -1,16 +1,7 @@
 require('dotenv').config();
+const config = require('./config/website');
 
 module.exports = {
-  siteMetadata: {
-    author: 'Jon Leopard',
-    title: `Jon Leopard | Web Developer`,
-    siteUrl: 'https://jonleopard.com',
-    defaultTitle: 'Jon Leopard | Web Developer',
-    defaultDescription:
-      'Jon Leopard is a Javascript Web Developer with skills in both front-end and back-end technologies.',
-    twitterHandle: '@jonlprd',
-  },
-
   plugins: [
     // Adding various source folders to the GraphQL layer.
     {
@@ -23,12 +14,26 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `config`,
+        path: `${__dirname}/config/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.GA_KEY,
         head: true,
         respectDNT: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: config.themeColor,
       },
     },
     {

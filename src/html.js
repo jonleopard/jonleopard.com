@@ -1,4 +1,5 @@
 import React from 'react';
+import 'SEO' from 'components/SEO';
 
 import faviconShortcut from 'favicon.ico';
 import faviconSmall from 'favicons/favicon-16x16.png';
