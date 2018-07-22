@@ -11,7 +11,7 @@ const meta = tags =>
   );
 
 export default props => (
-  <ThemeProvider webfonts>
+  <ThemeProvider>
     <Helmet defaultTitle={title}>
       <html lang="en" />
       <meta charSet="UTF-8" />

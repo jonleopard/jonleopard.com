@@ -24,6 +24,7 @@
     "gatsby-transformer-sharp": "^1.6.16",
     "grid-styled": "^5.0.2",
     "lodash": "^4.17.10",
+    "palx": "^1.0.3",
     "prismjs": "^1.14.0",
     "react": "^16.2.0",
     "react-disqus-comments": "^1.2.0",

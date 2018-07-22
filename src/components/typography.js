@@ -13,7 +13,7 @@ const BaseType = styled(Box)`
   ${space};
 `;
 
-export const H1 = ({ children, ...otherProps }) => (
+const H1 = ({ children, ...otherProps }) => (
   <BaseType
     is="h1"
     fontWeight="800"
@@ -26,7 +26,7 @@ export const H1 = ({ children, ...otherProps }) => (
   </BaseType>
 );
 
-export const H2 = ({ children, ...otherProps }) => (
+const H2 = ({ children, ...otherProps }) => (
   <BaseType
     is="h2"
     fontWeight="400"
@@ -37,19 +37,19 @@ export const H2 = ({ children, ...otherProps }) => (
   </BaseType>
 );
 
-export const H3 = ({ children, ...otherProps }) => (
+const H3 = ({ children, ...otherProps }) => (
   <BaseType is="h3" fontWeight="500" fontSize={[1, 2]} {...otherProps}>
     {children}
   </BaseType>
 );
 
-export const H4 = ({ children, ...otherProps }) => (
+const H4 = ({ children, ...otherProps }) => (
   <BaseType is="h4" fontWeight="400" fontSize={[1, 2]} {...otherProps}>
     {children}
   </BaseType>
 );
 
-export const Text = ({ children, ...otherProps }) => (
+const Text = ({ children, ...otherProps }) => (
   <BaseType
     is="p"
     fontWeight="400"
@@ -61,6 +61,6 @@ export const Text = ({ children, ...otherProps }) => (
   </BaseType>
 );
 
-export const P = styled(Text)`
+const P = styled(Text)`
   margin-bottom: 0.4em;
 `;
