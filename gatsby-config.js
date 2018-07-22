@@ -2,15 +2,9 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    author: 'Jon Leopard',
-    title: `Jon Leopard | Web Developer`,
-    siteUrl: 'https://jonleopard.com',
-    defaultTitle: 'Jon Leopard | Web Developer',
-    defaultDescription:
-      'Jon Leopard is a Javascript Web Developer with skills in both front-end and back-end technologies.',
-    twitterHandle: '@jonlprd',
+    title: 'Jon Leopard | Web Developer',
+    siteUrl: 'https://jonleopard.com'
   },
-
   plugins: [
     // Adding various source folders to the GraphQL layer.
     {
@@ -70,6 +64,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-resolve-src',
     'gatsby-transformer-json',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',

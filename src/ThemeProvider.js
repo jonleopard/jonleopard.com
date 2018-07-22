@@ -1,12 +1,9 @@
-import styledNormalize from 'styled-normalize';
-import styled, { injectGlobal } from 'styled-components';
+import React, { Fragment } from 'react';
+import { ThemeProvider as Root, injectGlobal, css } from 'styled-components';
+import theme from './theme';
 
 // eslint-disable-next-line no-unused-expressions
 injectGlobal`
-
-  ${styledNormalize}
-
-
   
   ::selection {
     background-color: #A980E4;
@@ -56,7 +53,15 @@ injectGlobal`
   }
 `;
 
-export default styled.div`
-  background-color: ${props => props.theme.colors.background};
-  min-height: 100vh;
-`;
+const ThemeProvider = ({ theme, webfonts, ...props }) => {
+  if (webfonts) injectGlobal([], fontsCss)
+  return (
+    <Root
+      theme={theme}
+      {...props}
+      children={<Fragment>{props.children}</Fragment>}
+    />
+  )
+}
+
+export default ThemeProvider;

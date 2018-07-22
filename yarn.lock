@@ -4182,6 +4182,10 @@ gatsby-plugin-react-next@^1.0.7:
     react "^16.0.0"
     react-dom "^16.0.0"
 
+gatsby-plugin-resolve-src@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-resolve-src/-/gatsby-plugin-resolve-src-1.1.4.tgz#28d60a35de488248d864937c48775613c80bba0c"
+
 gatsby-plugin-sharp@^1.6.25, gatsby-plugin-sharp@^1.6.48:
   version "1.6.48"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.6.48.tgz#9bb7515da9c7753b3065c51b2d35a0de5b9aa1f5"

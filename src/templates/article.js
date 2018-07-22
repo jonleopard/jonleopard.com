@@ -65,9 +65,7 @@ export const query = graphql`
     }
     site {
       siteMetadata {
-        author
-        defaultTitle
-        defaultDescription
+        title
       }
     }
   }

@@ -9,9 +9,7 @@ export default ({ data }) => {
   const meta = data.site.siteMetadata;
   return (
     <main>
-      <Helmet title={`Profile - ${meta.defaultTitle}`}>
-        <meta name="twitter:title" content={`Profile - ${meta.defaultTitle}`} />
-        <meta name="twitter:description" content={meta.defaultDescription} />
+      <Helmet title={`Profile - ${meta.title}`}>
       </Helmet>
       <PageHeader title="Profile" />
       <Section>
@@ -161,8 +159,7 @@ export const pageQuery = graphql`
   query ProfileQuery {
     site {
       siteMetadata {
-        defaultTitle
-        defaultDescription
+        title
       }
     }
   }
