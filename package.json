@@ -5,7 +5,7 @@
   "author": "Jon Leopard <contact@jonleopard.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.8.5",
+    "gatsby": "^2.8.6",
     "gatsby-cli": "^2.6.5",
     "gatsby-plugin-gtag": "^1.0.11",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -17,7 +17,7 @@
     "gatsby-plugin-sitemap": "^2.1.0",
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-subfont": "^1.0.6",
-    "gatsby-remark-prismjs": "^3.2.10",
+    "gatsby-remark-prismjs": "^3.2.11",
     "gatsby-source-contentful": "^2.0.67",
     "gatsby-source-filesystem": "^2.0.38",
     "gatsby-transformer-json": "^2.1.11",
@@ -33,7 +33,7 @@
     "react-helmet": "^5.2.1",
     "react-instafeed": "^1.0.0",
     "react-social-sharing": "^3.0.1",
-    "react-spring": "^8.0.22",
+    "react-spring": "^8.0.23",
     "rebass": "^3.1.1",
     "slash": "^3.0.0",
     "styled-components": "^4.3.1",
@@ -53,7 +53,7 @@
     "eslint-plugin-react": "^7.13.0",
     "husky": "^2.4.0",
     "lint-staged": "^8.2.0",
-    "prettier": "^1.18.0"
+    "prettier": "^1.18.2"
   },
   "husky": {
     "hooks": {
