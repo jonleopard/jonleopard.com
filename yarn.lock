@@ -843,104 +843,6 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@react-spring/addons@^9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@react-spring/addons/-/addons-9.0.0-beta.10.tgz#511703b5dab29b0d2c0a89713d936c3f8533c21b"
-  integrity sha512-hlja6+HkrjY8kbkYwT0zYiaOITCndHwkkgEzZV422VDrEU2Nkyv2tMnDbusVv5ZR8KpO2AqS8ZSkOvi4p82xjA==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@react-spring/animated" "^9.0.0-beta.10"
-    "@react-spring/core" "^9.0.0-beta.10"
-    tslib "^1.9.3"
-    use-memo-one "^1.1.0"
-
-"@react-spring/animated@^9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@react-spring/animated/-/animated-9.0.0-beta.10.tgz#4f66d95102297d273802be62ccf1e1281c910347"
-  integrity sha512-ui/QMOzSMVQKzzGVNqk4n9f1d3aBoyE5Hf+89/1+X+Q8m/6H9enUf6OUOTuwVaI8qQqFA9tQPpy2av1LPQVeBA==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@react-spring/shared" "^9.0.0-beta.10"
-    tslib "^1.9.3"
-
-"@react-spring/core@^9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@react-spring/core/-/core-9.0.0-beta.10.tgz#986cec5b03533eea0b704e68b75af28aa972ced8"
-  integrity sha512-Diu8nxtF+XMJFGhqGRlE/qaHPXtt/TQNnhtMpnjuECJln3QtnjzK8tkME739o6rzOE1+lw2HwKalCEx6XGR4iw==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@react-spring/animated" "^9.0.0-beta.10"
-    "@react-spring/shared" "^9.0.0-beta.10"
-    tslib "^1.9.3"
-    use-memo-one "^1.1.0"
-
-"@react-spring/konva@^9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@react-spring/konva/-/konva-9.0.0-beta.10.tgz#ba0c642a011f02f2445f4831213123ab9a4edd21"
-  integrity sha512-92kK7q87ahI78G9gL0PtpN84EF5euqDIbRvjHYrAFF09ydY3WCeYgnaIJ+ZsxeWX6q+Rk9vWDBM1sOGfm360nQ==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@react-spring/animated" "^9.0.0-beta.10"
-    "@react-spring/core" "^9.0.0-beta.10"
-    "@react-spring/shared" "^9.0.0-beta.10"
-    tslib "^1.9.3"
-
-"@react-spring/native@^9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@react-spring/native/-/native-9.0.0-beta.10.tgz#5beff1c665d4b453c929a4a7448aa03100e45a4e"
-  integrity sha512-zOBA4tjukym/N4EdBUusb7UtU+IkyrQGrqs7QO+x1QEzR3kfTykqRnaPVzpjS/TSIKtPLvH8zr0WPU7aiWne2A==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@react-spring/animated" "^9.0.0-beta.10"
-    "@react-spring/shared" "^9.0.0-beta.10"
-    "@types/react" "~16.8.0"
-    "@types/react-native" "~0.57.0"
-    fs-extra "^8.0.1"
-    tslib "^1.9.3"
-    use-memo-one "^1.1.0"
-
-"@react-spring/shared@^9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@react-spring/shared/-/shared-9.0.0-beta.10.tgz#274bcb333e0c0ec57fb131221f2720af5fd0076f"
-  integrity sha512-jtPojI7gut1c66KT/I3gdld6YIwFPg35iZYKYtnu8uk+iX8rHAE23V/iev/K+8HXtFbvXUkmrrINto3AIkczUw==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    tiny-invariant "^1.0.4"
-    tslib "^1.9.3"
-
-"@react-spring/three@^9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@react-spring/three/-/three-9.0.0-beta.10.tgz#828459586a18b571a1663729694c76d9e3d356ae"
-  integrity sha512-RsqbT6eefpPPbrLMSKFgcDmj72QKk6/QoF5MJkl5XeO2iUh1G1M2upvVbLIxxYkMxxai+dbVOhhrS/0UvYyoEQ==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@react-spring/animated" "^9.0.0-beta.10"
-    "@react-spring/core" "^9.0.0-beta.10"
-    "@react-spring/shared" "^9.0.0-beta.10"
-    tslib "^1.9.3"
-
-"@react-spring/web@^9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@react-spring/web/-/web-9.0.0-beta.10.tgz#a0c15f3750fda125727df104c54d8190bbb84ee1"
-  integrity sha512-5JK3gGhu1WWmnsgBXBJD9fxj04MYhW8u/5D6l0GUpqWGzB63ee5qrmki8u8Nmaz2s2CjAKPvaoMyz+ImixlD1w==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@react-spring/animated" "^9.0.0-beta.10"
-    "@react-spring/core" "^9.0.0-beta.10"
-    "@react-spring/shared" "^9.0.0-beta.10"
-    tslib "^1.9.3"
-
-"@react-spring/zdog@^9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@react-spring/zdog/-/zdog-9.0.0-beta.10.tgz#819198e87366198d99c928497b98f8dc5717d8f5"
-  integrity sha512-kFt6YOTcDKnXGBxX+AQDBb++RUTCSF3W8vwlYDgAg8gH2QDMIYgY6mLgPhn29d4+OT03Gyh9m6U/eaHsAQWnVQ==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@react-spring/animated" "^9.0.0-beta.10"
-    "@react-spring/core" "^9.0.0-beta.10"
-    "@react-spring/shared" "^9.0.0-beta.10"
-    tslib "^1.9.3"
-
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
@@ -1035,14 +937,6 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react-native@~0.57.0":
-  version "0.57.60"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.57.60.tgz#61e97a84e2f64ed971e7d238bb30cec188898235"
-  integrity sha512-zObrnRsCbpM7qDm97d8+5qiSIMMYRaWgpqu6orjbjzLUAcJaKnpBMXgW6bRXWkFBjHgm3hjDAdVVGMWlrYJBdw==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/react" "*"
-
 "@types/react@*":
   version "16.8.14"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.14.tgz#b561bfabeb8f60d12e6d4766367e7a9ae927aa18"
@@ -1055,14 +949,6 @@
   version "16.8.18"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.18.tgz#fe66fb748b0b6ca9709d38b87b2d1356d960a511"
   integrity sha512-lUXdKzRqWR4FebR5tGHkLCqnvQJS4fdXKCBrNGGbglqZg2gpU+J82pMONevQODUotATs9fc9k66bx3/St8vReg==
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^2.2.0"
-
-"@types/react@~16.8.0":
-  version "16.8.19"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.19.tgz#629154ef05e2e1985cdde94477deefd823ad9be3"
-  integrity sha512-QzEzjrd1zFzY9cDlbIiFvdr+YUmefuuRYrPxmkwG0UQv5XF35gFIi7a95m1bNVcFU0VimxSZ5QVGSiBmlggQXQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -5601,15 +5487,6 @@ fs-extra@^7.0.0, fs-extra@^7.0.1:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.0.1.tgz#90294081f978b1f182f347a440a209154344285b"
-  integrity sha512-W+XLrggcDzlle47X/XnS7FXrXu9sDo+Ze9zpndeBxdgv88FHLm1HtmkhEwavruS6koanBjp098rUpHs65EmG7A==
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^4.0.0"
-    universalify "^0.1.0"
-
 fs-minipass@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-1.2.5.tgz#06c277218454ec288df77ada54a03b8702aacb9d"
@@ -5664,10 +5541,10 @@ gather-stream@^1.0.0:
   resolved "https://registry.yarnpkg.com/gather-stream/-/gather-stream-1.0.0.tgz#b33994af457a8115700d410f317733cbe7a0904b"
   integrity sha1-szmUr0V6gRVwDUEPMXczy+egkEs=
 
-gatsby-cli@^2.6.5:
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.6.5.tgz#54d812a7a9bfa39c48eaca1864d6bb56f4fde8c6"
-  integrity sha512-M0M6OoZ3ZVT6dYHP1I0scJBJzQlTbeElgO7C08acc68Qj9BD0LbSnt38kyJ60j1oceCndnGgNsLP6lg3iR87/A==
+gatsby-cli@^2.6.6:
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.6.6.tgz#1876b99d5a10f102c445d0d5f000870ba8dc44fb"
+  integrity sha512-/vkyOCCuDJLanWkPI0cin3Wm1sV2IEgQRWnixnOT2vs8p7DlXf571SV1Iq36O+2CHhaOfMDg6FRhClB1k/uZ9A==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
@@ -5785,10 +5662,10 @@ gatsby-plugin-react-helmet@^3.0.12:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-sharp@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.1.3.tgz#d3a110aee8d9d9788a8fa7c10ccebd90387481eb"
-  integrity sha512-xkVTJu3/++XdkLJW3CHeIE+xlr+NyudTqLsE+rKeCBeCzbuw0oHoRCyKqwY9CN0FfKSqzj9ktZqBNNNR49Fp8Q==
+gatsby-plugin-sharp@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.1.4.tgz#15df65b4d9bfe29adce7582919e091d95b29cb51"
+  integrity sha512-+C0rpejmkWfNu9o+ABHHDuah6EYpQ4tmdjGh1+ahaZ95PvXwkrwNHdH0FPI5I2fFDv6HrIJRXVA240JOgpyH8g==
   dependencies:
     "@babel/runtime" "^7.0.0"
     async "^2.1.2"
@@ -5851,10 +5728,10 @@ gatsby-remark-prismjs@^3.2.11:
     parse-numeric-range "^0.0.2"
     unist-util-visit "^1.3.0"
 
-gatsby-source-contentful@^2.0.67:
-  version "2.0.67"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.0.67.tgz#cda63d712c1098b7e132bc0f8758c8755a514a86"
-  integrity sha512-W+C63T88rRaJzuuK7yYKqbJX2wWkUC0xZp1nap/v05M+hF0L6xavrenDSeVR3XgjLahkcn+RyAfDlQbRZ3e/Og==
+gatsby-source-contentful@^2.0.70:
+  version "2.0.70"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.0.70.tgz#af6de0b156f2758a231930467add1647109fd635"
+  integrity sha512-ZS14LKSeny1tbOvZTI7Ni9KGG9k+g8BLCOTbZ4NlY1Rf25cI5LSEY6+91tYLKcANrLLan+QW3QeNpdw+c2pfjg==
   dependencies:
     "@babel/runtime" "^7.0.0"
     axios "^0.19.0"
@@ -5864,18 +5741,18 @@ gatsby-source-contentful@^2.0.67:
     contentful "^6.1.0"
     deep-map "^1.5.0"
     fs-extra "^4.0.2"
-    gatsby-plugin-sharp "^2.1.3"
-    gatsby-source-filesystem "^2.0.38"
+    gatsby-plugin-sharp "^2.1.4"
+    gatsby-source-filesystem "^2.0.39"
     is-online "^7.0.0"
     joi "^14.0.0"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.10"
     qs "^6.4.0"
 
-gatsby-source-filesystem@^2.0.38:
-  version "2.0.38"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.38.tgz#8f9c2b8c0f17d1f8c464c3488a14e15c62c6eca2"
-  integrity sha512-r7LNTSVtgFz0n4Ox0iDc8PkOSM8nja+ONkcvyFWSyV1KjnvQdcsxXbVZba0S+ngUp+R+wSFS/GGD2LqdV0mCVA==
+gatsby-source-filesystem@^2.0.39:
+  version "2.0.39"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.39.tgz#39d0f55aae594eea65454728676d92f1b43ba6e5"
+  integrity sha512-RL5J1WTrb6snyTeCmylt8/6cmhJxftjZGFLFHByEERyVEgMMiNDRHWqmrW/oWwkQ6Gvxi4GNnYUPsps+9Azv8Q==
   dependencies:
     "@babel/runtime" "^7.0.0"
     better-queue "^3.8.7"
@@ -5889,7 +5766,6 @@ gatsby-source-filesystem@^2.0.38:
     pretty-bytes "^4.0.2"
     progress "^1.1.8"
     read-chunk "^3.0.0"
-    slash "^1.0.0"
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
@@ -5961,10 +5837,10 @@ gatsby-transformer-sharp@^2.1.21:
     semver "^5.6.0"
     sharp "^0.22.1"
 
-gatsby@^2.8.6:
-  version "2.8.6"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.8.6.tgz#3cd65805e2b5b120ee011761ef771bbbdacf3942"
-  integrity sha512-se7mFL63dJ3L9fl6YB8FwEHA6EHrU/z+p4yTzZvEOqseXrGMYoT+xCWvX9lgpTF7zEIb2TTgyfbN69ww+Je3mA==
+gatsby@^2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.9.1.tgz#f9c0cd72bf15a6cc1b8dd394fd41895186c2e6f7"
+  integrity sha512-Fa+HHqUXKbUF5Vn++9v9/tUGHTJ/eieAgvaMMjjkpFvTXaN66qGRrQO0ppjka2IW0F01He7dlSCPjrngGXv05g==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -6022,7 +5898,7 @@ gatsby@^2.8.6:
     flat "^4.0.0"
     fs-exists-cached "1.0.0"
     fs-extra "^5.0.0"
-    gatsby-cli "^2.6.5"
+    gatsby-cli "^2.6.6"
     gatsby-graphiql-explorer "^0.1.2"
     gatsby-link "^2.1.1"
     gatsby-plugin-page-creator "^2.0.13"
@@ -6033,7 +5909,6 @@ gatsby@^2.8.6:
     graphql "^14.1.1"
     graphql-compose "^6.3.2"
     graphql-playground-middleware-express "^1.7.10"
-    hash-mod "^0.0.5"
     invariant "^2.2.4"
     is-relative "^1.0.0"
     is-relative-url "^2.0.0"
@@ -6042,7 +5917,6 @@ gatsby@^2.8.6:
     joi "^14.0.0"
     json-loader "^0.5.7"
     json-stringify-safe "^5.0.1"
-    kebab-hash "^0.1.2"
     lodash "^4.17.10"
     md5 "^2.2.1"
     md5-file "^3.1.1"
@@ -6578,11 +6452,6 @@ hash-base@^3.0.0:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-hash-mod@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/hash-mod/-/hash-mod-0.0.5.tgz#daf1e4973a9116643467d54ee7690b43ef802ecc"
-  integrity sha1-2vHklzqRFmQ0Z9VO52kLQ++ALsw=
-
 hash.js@^1.0.0, hash.js@^1.0.3:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.7.tgz#0babca538e8d4ee4a0f8988d68866537a003cf42"
@@ -6885,10 +6754,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-husky@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-2.4.0.tgz#1bac7c44588f6e91f808b72efc82d24a57194f36"
-  integrity sha512-3k1wuZU20gFkphNWMjh2ISCFaqfbaLY7R9FST2Mj9HeRhUK9ydj9qQR8qfXlog3EctVGsyeilcZkIT7uBZDDVA==
+husky@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-2.4.1.tgz#dd00f9646f8693b93f7b3a12ba4be00be0eff7ab"
+  integrity sha512-ZRwMWHr7QruR22dQ5l3rEGXQ7rAQYsJYqaeCd+NyOsIFczAtqaApZQP3P4HwLZjCtFbm3SUNYoKuoBXX3AYYfw==
   dependencies:
     cosmiconfig "^5.2.0"
     execa "^1.0.0"
@@ -10658,7 +10527,7 @@ prompts@^2.1.0:
     kleur "^3.0.2"
     sisteransi "^1.0.0"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10998,20 +10867,13 @@ react-social-sharing@^3.0.1:
     styled-components "^4.1.1"
     styled-is "^1.1.5"
 
-react-spring@^9.0.0-beta.11:
-  version "9.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-9.0.0-beta.11.tgz#69be6748907ba051a99e7f3bdff99829d3c26b46"
-  integrity sha512-4x90iaprHGco43nnb67z9Ud3vb5/PzilkBnGb/wq49OI9W4IvJ+/I7JlouCGfzQhFhxNzm5fc/TxuF+kYyE0FA==
+react-spring@^8.0.23:
+  version "8.0.23"
+  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-8.0.23.tgz#2a0ddaeb0816ea9e21898d04d3b8da7d1a3daa14"
+  integrity sha512-2mp7+0DnoBQ67h2zY0rFztdMqSm8gdvSWHgfwKz4TbLQ+N4n2IauB6DCMc046K8uvUNwDCUdlKgshUrCj14QUA==
   dependencies:
     "@babel/runtime" "^7.3.1"
-    "@react-spring/addons" "^9.0.0-beta.10"
-    "@react-spring/core" "^9.0.0-beta.10"
-    "@react-spring/konva" "^9.0.0-beta.10"
-    "@react-spring/native" "^9.0.0-beta.10"
-    "@react-spring/three" "^9.0.0-beta.10"
-    "@react-spring/web" "^9.0.0-beta.10"
-    "@react-spring/zdog" "^9.0.0-beta.10"
-    tslib "^1.9.3"
+    prop-types "^15.5.8"
 
 react@^16.8.4, react@^16.8.6:
   version "16.8.6"
@@ -12992,11 +12854,6 @@ tiny-inflate@^1.0.0, tiny-inflate@^1.0.2:
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.2.tgz#93d9decffc8805bd57eae4310f0b745e9b6fb3a7"
   integrity sha1-k9nez/yIBb1X6uQxDwt0Xptvs6c=
 
-tiny-invariant@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.0.4.tgz#346b5415fd93cb696b0c4e8a96697ff590f92463"
-  integrity sha512-lMhRd/djQJ3MoaHEBrw8e2/uM4rs9YMNk0iOr8rHQ0QdbM7D4l0gFl3szKdeixrlyfm9Zqi4dxHCM2qVG8ND5g==
-
 tinycolor2@^1.1.2:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
@@ -13162,7 +13019,7 @@ ts-pnp@^1.1.2:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.2.tgz#be8e4bfce5d00f0f58e0666a82260c34a57af552"
   integrity sha512-f5Knjh7XCyRIzoC/z1Su1yLLRrPrFCgtUAh/9fCSP6NKbATwpOL1+idQVXQokK9GRFURn/jYPGPfegIctwunoA==
 
-tslib@^1.6.0, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.6.0, tslib@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
@@ -13577,11 +13434,6 @@ urltools@^0.4.1:
     glob "^7.0.3"
     underscore "^1.8.3"
     urijs "^1.18.2"
-
-use-memo-one@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/use-memo-one/-/use-memo-one-1.1.0.tgz#9392ec84881af047f22aef4bcb9cd1c333899613"
-  integrity sha512-mGmKaX2vauOWpFas4mGXj65JXkueLcca3OsT2iBKwB/Nl7NQeABIzBYq/HzVkFvnHXsf/S59DNN5UEOU+Bp1uw==
 
 use@^3.1.0:
   version "3.1.1"
