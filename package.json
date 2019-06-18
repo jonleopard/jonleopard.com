@@ -4,7 +4,7 @@
   "version": "4.2.0",
   "author": "Jon Leopard <contact@jonleopard.com>",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.0",
+    "babel-plugin-styled-components": "^1.10.1",
     "gatsby": "^2.9.4",
     "gatsby-cli": "^2.6.7",
     "gatsby-plugin-gtag": "^1.0.11",
@@ -33,7 +33,7 @@
     "react-helmet": "^5.2.1",
     "react-instafeed": "^1.0.0",
     "react-social-sharing": "^3.0.1",
-    "react-spring": "^8.0.24",
+    "react-spring": "^8.0.25",
     "rebass": "^3.1.1",
     "slash": "^3.0.0",
     "styled-components": "^4.3.1",
@@ -42,11 +42,11 @@
     "typeface-rubik": "^0.0.72"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.2",
     "babel-preset-react": "^6.24.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.0.0",
-    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-prettier": "^5.0.0",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.0",
