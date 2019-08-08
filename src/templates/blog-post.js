@@ -15,8 +15,8 @@ const Template = ({ data }) => {
       <SEO />
       <article>
         <>
-          <Box width={1} pt={[20, 80]} pb={2}>
-            <Text size="10px">Written on {data.contentfulBlogPost.date}</Text>
+          <Box pt={[20, 80]} pb={2}>
+            <Text>Written on {data.contentfulBlogPost.date}</Text>
             <Text fontFamily="heading" lineHeight="heading">
               <PageHeader title={data.contentfulBlogPost.title} />
             </Text>
