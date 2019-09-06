@@ -1,14 +1,14 @@
-const config = require("./config/website");
+const config = require('./config/website')
 
-const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-});
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix
+    siteUrl: config.siteUrl + pathPrefix,
   },
 
   plugins: [
@@ -17,15 +17,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages/`,
-        name: `pages`
-      }
+        name: `pages`,
+      },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/images/`,
-        name: `images`
-      }
+        name: `images`,
+      },
     },
     {
       resolve: `gatsby-plugin-gtag`,
@@ -34,19 +34,19 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: true,
         // enable ip anonymization
-        anonymize: true
-      }
+        anonymize: true,
+      },
     },
     {
-      resolve: "gatsby-plugin-matomo",
+      resolve: 'gatsby-plugin-matomo',
       options: {
-        siteId: "1",
-        matomoUrl: "https://jonleopard.matomo.cloud/",
-        siteUrl: "https://jonleopard.com"
-      }
+        siteId: '1',
+        matomoUrl: 'https://jonleopard.matomo.cloud/',
+        siteUrl: 'https://jonleopard.com',
+      },
     },
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
@@ -54,31 +54,31 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: "standalone",
+        display: 'standalone',
         icons: [
           {
-            src: "/favicons/android-chrome-192x192.png",
-            sizes: "192x192",
-            type: "image/png"
+            src: '/favicons/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
           {
-            src: "/favicons/android-chrome-512x512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      }
+            src: '/favicons/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
     },
     {
-      resolve: "gatsby-source-contentful",
+      resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID || "",
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || "",
-        downloadLocal: true
-      }
+        spaceId: process.env.CONTENTFUL_SPACE_ID || '',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || '',
+        downloadLocal: true,
+      },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
@@ -91,41 +91,41 @@ module.exports = {
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: "language-",
+              classPrefix: 'language-',
               // This is used to allow setting a language for inline code
               // (i.e. single backticks) by creating a separator.
               // This separator is a string and will do no white-space
               // stripping.
               // A suggested value for English speakers is the non-ascii
               // character '›'.
-              inlineCodeMarker: "›",
+              inlineCodeMarker: '›',
               // This lets you set up language aliases.  For example,
               // setting this to '{ sh: "bash" }' will let you use
               // the language "sh" which will highlight using the
               // bash highlighter.
-              aliases: {}
-            }
-          }
-        ]
-      }
+              aliases: {},
+            },
+          },
+        ],
+      },
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    "gatsby-transformer-json",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-styled-components",
+    'gatsby-transformer-json',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-styled-components',
     `gatsby-plugin-subfont`,
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          "/*.js": ["cache-control: public, max-age=31536000, immutable"],
-          "/*.css": ["cache-control: public, max-age=31536000, immutable"],
-          "/sw.js": ["cache-control: public, max-age=0, must-revalidate"]
-        }
-      }
-    }
-  ]
-};
+          '/*.js': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.css': ['cache-control: public, max-age=31536000, immutable'],
+          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
+        },
+      },
+    },
+  ],
+}
