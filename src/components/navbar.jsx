@@ -1,12 +1,10 @@
 /* eslint-disable */
 // TODO: disabling until I can reconfigure rules
-import React, { useState } from "react";
+/** @jsx jsx */
 import { Flex, Box, Text } from "rebass";
-import styled, { keyframes } from "styled-components";
-import { Sun, Moon } from "react-feather";
-//import Link from "./link";
+import { jsx, css, keyframes } from "@emotion/core";
+
 import { Link } from "gatsby";
-import { useAppContext } from "./layout";
 
 const fade = keyframes`
   from {
@@ -17,21 +15,27 @@ const fade = keyframes`
     }
 `;
 
-const AnimatedBlock = styled.div`
-  display: inline-block;
-  animation: ${fade} 0.5s alternate infinite;
-`;
+// const AnimatedBlock = styled.div`
+//   display: inline-block;
+//   animation: ${fade} 0.5s alternate infinite;
+// `;
 
 const NavBar = () => {
-  const state = useAppContext();
   return (
     <Text fontSize={2} fontFamily="body">
       <Box width={1}>
         <Flex alignItems="center" py={3}>
-          <Box width={1}>
+          <Box>
             <Link to="/">
               jonleopard.com
-              <AnimatedBlock>▌</AnimatedBlock>
+              <div
+                css={css`
+                  animation: ${fade} 0.5s alternate infinite;
+                  display: inline-block;
+                `}
+              >
+                ▌
+              </div>
             </Link>
           </Box>
           <Box mx="auto" />
@@ -40,17 +44,6 @@ const NavBar = () => {
           </Box>
           <Box pr={2}>
             <Link to="/blog">blog</Link>
-          </Box>
-          <Box ml={2}>
-            <Text
-              title="Toggle Color Mode"
-              onClick={e => {
-                e.preventDefault();
-                state.cycleMode();
-              }}
-            >
-              {state.mode === "dark" ? <Sun size={28} /> : <Moon size={28} />}
-            </Text>
           </Box>
         </Flex>
       </Box>
