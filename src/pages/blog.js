@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link as glink, graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Flex, Box, Text, Heading } from 'rebass'
 
-import Link from '../components/link'
 import Layout from '../components/layout'
 
 const BlogIndex = ({ data }) => {
@@ -20,7 +19,7 @@ const BlogIndex = ({ data }) => {
           <Box>
             {posts.map(({ node: post }) => (
               <Text fontSize={2} key={post.title} mb={3}>
-                <Link as={glink} to={`/blog/${post.slug}`} color="black">
+                <Link to={`/blog/${post.slug}`} color="black">
                   {post.title}
                 </Link>
                 <Box pt={2}>

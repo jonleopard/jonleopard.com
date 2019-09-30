@@ -1,7 +1,6 @@
 import React from 'react'
 import { Flex, Box, Text, Heading } from 'rebass'
-
-import Link from '../components/link'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const profile = () => (

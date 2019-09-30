@@ -1,7 +1,6 @@
 import React from 'react'
 import { Flex, Box, Text } from 'rebass'
-
-import Link from './link'
+import { Link } from 'gatsby'
 
 const CURRENT_YEAR = new Date().getFullYear()
 
