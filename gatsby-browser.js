@@ -7,11 +7,6 @@
  */
 
 // You can delete this file if you're not using it
-
-// I put these in the layout.js component instead
-// require('typeface-rubik')
-// require('typeface-lato')
-
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
     `jonleopard.com has been updated. ` +

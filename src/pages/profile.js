@@ -1,203 +1,162 @@
-import React from 'react'
-import { Flex, Box, Text, Heading } from 'rebass'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const profile = () => (
   <Layout>
-    <Text fontFamily="body" color="inherit">
-      <Box pt={80}>
-        <Heading fontFamily="heading" fontSize={6} mb={4}>
-          Profile
-        </Heading>
-      </Box>
+    <div sx={{ pt: 80 }}>
+      <h1>Profile</h1>
+    </div>
 
-      <Box width={1}>
-        <Text fontSize={2} lineHeight="body">
-          I'm a self taught web developer who loves all things tech. This blog serves as a medium to get me more
-          involved in the industry, talk about the projects I'm working on, as well as post other random musings. I'm a
-          huge movie buff, gaming nerd, and coffee lover. When I'm not in front of a screen, I'm most likely reading a
-          good book or listening to music. Check out my{' '}
-          <Link to="https://last.fm/user/crunkmastafunk" target="_blank" rel="noopener noreferrer">
-            last.fm
-          </Link>{' '}
-          and{' '}
-          <Link to="https://goodreads.com/jonleopard" target="_blank" rel="noopener noreferrer">
-            Goodreads
-          </Link>{' '}
-          profile to see what I'm into these days.
-        </Text>
-      </Box>
+    <div>
+      <div>
+        I'm a self taught web developer who loves all things tech. This blog serves as a medium to get me more involved
+        in the industry, talk about the projects I'm working on, as well as post other random musings. I'm a huge movie
+        buff, gaming nerd, and coffee lover. When I'm not in front of a screen, I'm most likely reading a good book or
+        listening to music. Check out my
+        <Link to="https://last.fm/user/crunkmastafunk" target="_blank" rel="noopener noreferrer">
+          last.fm
+        </Link>
+        and
+        <Link to="https://goodreads.com/jonleopard" target="_blank" rel="noopener noreferrer">
+          Goodreads
+        </Link>
+        profile to see what I'm into these days.
+      </div>
+    </div>
 
-      <Box width={1} mt={80}>
-        <Heading fontFamily="heading" fontSize={[5, 4]} mb={3}>
-          Projects
-        </Heading>
-      </Box>
+    <div sx={{ mt: 80 }}>
+      <h3 sx={{ mb: 3 }}>Projects</h3>
+    </div>
 
-      <Flex flexWrap="wrap" mx={-2}>
-        <Box width={[1, 1 / 2]} px={2} py={2}>
-          <Text fontSize={3} mb={2}>
-            <span role="img" aria-label="Moon">
-              🌙{' '}
-            </span>
-            <Link href="https://github.com/jonleopard/lunarphase" target="_blank" rel="noopener noreferrer">
-              moonphase.space
-            </Link>
-          </Text>
-          <Text>A tiny app that displays the current moon phase</Text>
-        </Box>
+    <div sx={{ flexWrap: 'wrap', mx: '-2' }}>
+      <div sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
+        <span role="img" aria-label="Moon">
+          🌙
+        </span>
+        <Link href="https://github.com/jonleopard/lunarphase" target="_blank" rel="noopener noreferrer">
+          moonphase.space
+        </Link>
+        <div>A tiny app that displays the current moon phase</div>
+      </div>
 
-        <Box width={[1, 1 / 2]} px={2} py={2}>
-          <Text fontSize={3} mb={2}>
-            <span role="img" aria-label="Tools">
-              🛠{' '}
-            </span>
-            <Link href="https://github.com/jonleopard/dotfiles" target="_blank" rel="noopener noreferrer">
-              dotfiles
-            </Link>
-          </Text>
-          <Text>A dotfile repo for my development environment</Text>
-        </Box>
+      <div sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
+        <span role="img" aria-label="Tools">
+          🛠
+        </span>
+        <Link href="https://github.com/jonleopard/dotfiles" target="_blank" rel="noopener noreferrer">
+          dotfiles
+        </Link>
+        <div>A dotfile repo for my development environment</div>
+      </div>
 
-        <Box width={[1, 1 / 2]} px={2} py={2}>
-          <Text fontSize={3} mb={2}>
-            <span role="img" aria-label="Hat">
-              🎓{' '}
-            </span>
-            <Link href="https://github.com/jonleopard/dotfiles" target="_blank" rel="noopener noreferrer">
-              dotfile Starter
-            </Link>
-          </Text>
-          <Text>A practice/starter guide on how to make your own dotfile repo</Text>
-        </Box>
-      </Flex>
+      <div sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
+        <span role="img" aria-label="Hat">
+          🎓
+        </span>
+        <Link href="https://github.com/jonleopard/dotfiles" target="_blank" rel="noopener noreferrer">
+          dotfile Starter
+        </Link>
+        <div>A practice/starter guide on how to make your own dotfile repo</div>
+      </div>
+    </div>
 
-      <Box width={1} mt={80}>
-        <Heading fontFamily="heading" fontSize={[5, 4]} mb={3}>
-          Skills
-        </Heading>
-      </Box>
+    <div sx={{ mt: 80 }}>
+      <div sx={{ fontSize: [5, 4], mb: 3 }}>Skills</div>
+    </div>
 
-      <Flex flexWrap="wrap" mx={-2}>
-        <Box width={[1, 1 / 2]} px={2} py={2}>
-          <Text fontSize={3} mb={2}>
-            ✨ Frontend
-          </Text>
-          <Text>React - Vue - Redux - NextJS</Text>
-          <Text>Webpack - Babel - Prettier - ESLint</Text>
-          <Text>GatsbyJS - Bootstrap - TailwindCSS - Styled Components</Text>
-        </Box>
-        <Box width={[1, 1 / 2]} px={2} py={2}>
-          <Text fontSize={3} mb={2}>
-            ⚡Backend
-          </Text>
-          <Text>Node - Go - PHP - Laravel</Text>
-          <Text>SQL - Docker - GraphQL</Text>
-        </Box>
-      </Flex>
+    <div sx={{ flexWrap: 'wrap', mx: -2 }}>
+      <div sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
+        <div fontSize={3} mb={2}>
+          ✨ Frontend
+        </div>
+        <div>React - Vue - Redux - NextJS</div>
+        <div>Webpack - Babel - Prettier - ESLint</div>
+        <div>GatsbyJS - Bootstrap - TailwindCSS - Styled Components</div>
+      </div>
 
-      <Box width={1} mt={80}>
-        <Heading fontFamily="heading" fontSize={[5, 4]} pb={3}>
-          Experience
-        </Heading>
-      </Box>
+      <div sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
+        <div fontSize={3} mb={2}>
+          ⚡Backend
+        </div>
+        <div>Node - Go - PHP - Laravel</div>
+        <div>SQL - Docker - GraphQL</div>
+      </div>
+    </div>
 
-      <Flex flexWrap="wrap" mx={-2}>
-        <Box width={[1, 1 / 2]} px={2} py={2}>
-          <Flex justifyContent="space-between" alignItems="center">
-            <Text fontSize={3} mb={2}>
-              UpFX
-            </Text>
-            <Text>2014 - 2016</Text>
-          </Flex>
-          <Text>Frontend Designer & Project Manager</Text>
-        </Box>
+    <div sx={{ mt: 80 }}>
+      <div sx={{ fontSize: [5, 4], pb: 3 }}>Experience</div>
+    </div>
 
-        <Box width={[1, 1 / 2]} px={2} py={2}>
-          <Flex justifyContent="space-between" alignItems="center">
-            <Text fontSize={3} mb={2}>
-              GoingUP
-            </Text>
-            <Text>2009 - 2010</Text>
-          </Flex>
-          <Text>Frontend Designer & Project Manager</Text>
-        </Box>
+    <div sx={{ flexWrap: 'wrap', mx: -2 }}>
+      <div sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
+        <div sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+          <div sx={{ fontSize: 3, mb: 2 }}>GoingUP</div>
+          <div>2009 - 2010</div>
+        </div>
+        <div>Frontend Designer & Project Manager</div>
+      </div>
 
-        <Box width={[1, 1 / 2]} px={2} py={2}>
-          <Flex justifyContent="space-between" alignItems="center">
-            <Text fontSize={3} mb={2}>
-              1Cart
-            </Text>
-            <Text>2010 - 2013</Text>
-          </Flex>
-          <Text>Frontend Designer, Wireframer, Project Manager</Text>
-        </Box>
+      <div sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
+        <div sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+          <div sx={{ fontSize: 3, mb: 2 }}>GoingUP</div>
+          <div>2009 - 2010</div>
+        </div>
+        <div>Frontend Designer & Project Manager</div>
+      </div>
+    </div>
 
-        <Box width={[1, 1 / 2]} px={2} py={2}>
-          <Flex justifyContent="space-between" alignItems="center">
-            <Text fontSize={3} mb={2}>
-              TotalRecall
-            </Text>
-            <Text>2006 - 2008</Text>
-          </Flex>
-          <Text>Technician & Customer Support Representative</Text>
-        </Box>
-      </Flex>
+    <div sx={{ mt: 80 }}>
+      <div sx={{ fontSize: [5, 4], pb: 3 }}>Certifications</div>
+    </div>
 
-      <Box width={1} mt={80}>
-        <Heading fontFamily="heading" fontSize={[5, 4]} pb={3}>
-          Certifications
-        </Heading>
-      </Box>
+    <div sx={{ flexWrap: 'wrap', mx: -2 }}>
+      <div sx={{ width: ['50%', '25%'], px: 2, py: 2 }}>
+        <div>2016 - LinuxAcademy</div>
+        <div>Docker Quick Start</div>
+      </div>
 
-      <Flex flexWrap="wrap" mx={-2}>
-        <Box width={[1 / 2, 1 / 3]} px={2} py={2}>
-          <Text>2016 - LinuxAcademy</Text>
-          <Text>Docker Quick Start</Text>
-        </Box>
+      <div sx={{ width: ['50%', '25%'], px: 2, py: 2 }}>
+        <div>2016 - LinuxAcademy</div>
+        <div>Ansible Quick Start</div>
+      </div>
 
-        <Box width={[1 / 2, 1 / 3]} px={2} py={2}>
-          <Text>2016 - LinuxAcademy</Text>
-          <Text>Ansible Quick Start</Text>
-        </Box>
+      <div sx={{ width: ['50%', '25%'], px: 2, py: 2 }}>
+        <div>2016 - LinuxAcademy</div>
+        <div>Introduction to Linux</div>
+      </div>
 
-        <Box width={[1 / 2, 1 / 3]} px={2} py={2}>
-          <Text>2016 - LinuxAcademy</Text>
-          <Text>Introduction to Linux</Text>
-        </Box>
+      <div sx={{ width: ['50%', '25%'], px: 2, py: 2 }}>
+        <div>2016 - LinuxAcademy</div>
+        <div>OpenStack Essentials</div>
+      </div>
 
-        <Box width={[1 / 2, 1 / 3]} px={2} py={2}>
-          <Text>2016 - LinuxAcademy</Text>
-          <Text>OpenStack Essentials</Text>
-        </Box>
+      <div sx={{ width: ['50%', '25%'], px: 2, py: 2 }}>
+        <div>2017 - Udemy</div>
+        <div>Web Developer Bootcamp</div>
+      </div>
 
-        <Box width={[1 / 2, 1 / 3]} px={2} py={2}>
-          <Text>2017 - Udemy</Text>
-          <Text>Web Developer Bootcamp</Text>
-        </Box>
+      <div sx={{ width: ['50%', '25%'], px: 2, py: 2 }}>
+        <div>2017 - Udemy</div>
+        <div>GraphQL with React</div>
+      </div>
 
-        <Box width={[1 / 2, 1 / 3]} px={2} py={2}>
-          <Text>2017 - Udemy</Text>
-          <Text>GraphQL with React</Text>
-        </Box>
+      <div sx={{ width: ['50%', '25%'], px: 2, py: 2 }}>
+        <div>2017 - Wes Bos</div>
+        <div>LearnNode!</div>
+      </div>
 
-        <Box width={[1 / 2, 1 / 3]} px={2} py={2}>
-          <Text>2017 - Wes Bos</Text>
-          <Text>LearnNode!</Text>
-        </Box>
+      <div sx={{ width: ['50%', '25%'], px: 2, py: 2 }}>
+        <div>2017 - Wes Bos</div>
+        <div>ES6 for Everyone</div>
+      </div>
 
-        <Box width={[1 / 2, 1 / 3]} px={2} py={2}>
-          <Text>2017 - Wes Bos</Text>
-          <Text>ES6 for Everyone</Text>
-        </Box>
-
-        <Box width={[1 / 2, 1 / 3]} px={2} py={2}>
-          <Text>2017 - Wes Bos</Text>
-          <Text>React for Beginners</Text>
-        </Box>
-      </Flex>
-    </Text>
+      <div sx={{ width: ['50%', '25%'], px: 2, py: 2 }}>
+        <div>2017 - Wes Bos</div>
+        <div>React for Beginners</div>
+      </div>
+    </div>
   </Layout>
 )
 

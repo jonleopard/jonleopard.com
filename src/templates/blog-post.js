@@ -1,8 +1,8 @@
+/** @jsx jsx */
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Box, Text } from 'rebass'
+import { jsx } from 'theme-ui'
 
-import Markdown from '../components/markdown'
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 import PageHeader from '../components/page-header'
@@ -15,15 +15,15 @@ const Template = ({ data }) => {
       <SEO />
       <article>
         <>
-          <Box pt={[20, 80]} pb={2}>
-            <Text>Written on {data.contentfulBlogPost.date}</Text>
-            <Text fontFamily="heading" lineHeight="heading">
+          <div sx={{ pt: [20, 80], pb: 2 }}>
+            <div>Written on {data.contentfulBlogPost.date}</div>
+            <div>
               <PageHeader title={data.contentfulBlogPost.title} />
-            </Text>
-          </Box>
+            </div>
+          </div>
 
           <SocialMediaButtons />
-          <Markdown
+          <div
             dangerouslySetInnerHTML={{
               __html: data.contentfulBlogPost.body.childMarkdownRemark.html,
             }}

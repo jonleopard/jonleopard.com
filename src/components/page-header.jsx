@@ -1,14 +1,12 @@
+/** @jsx jsx */
 import React from 'react'
-import { Box, Heading, Text } from 'rebass'
+import { jsx } from 'theme-ui'
 
 const PageHeader = ({ title, subTitle }) => (
-  <Box width={1}>
-    <Heading fontSize={6}>{title}</Heading>
-    {subTitle ? (
-      <Text fontSize={3} pt={2}>
-        {subTitle}
-      </Text>
-    ) : null}
-  </Box>
+  <div>
+    <div sx={{ fontSize: 5 }}>{title}</div>
+    {subTitle ? <div sx={{ fontSize: 3, pt: 2 }}>{subTitle}</div> : null}
+  </div>
 )
+
 export default PageHeader

@@ -1,6 +1,6 @@
-import React from 'react'
+/** @jsx jsx */
 import { Link, graphql } from 'gatsby'
-import { Flex, Box, Text, Heading } from 'rebass'
+import { jsx } from 'theme-ui'
 
 import Layout from '../components/layout'
 
@@ -9,29 +9,23 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <Text fontFamily="body">
-        <Box width={1} pt={[20, 80]}>
-          <Heading fontFamily="heading" fontSize={6} pb={4}>
-            Blog
-          </Heading>
-        </Box>
-        <Flex flexDirection="column">
-          <Box>
+      <div>
+        <div>
+          <div>Blog</div>
+        </div>
+        <div>
+          <div>
             {posts.map(({ node: post }) => (
-              <Text fontSize={2} key={post.title} mb={3}>
-                <Link to={`/blog/${post.slug}`} color="black">
-                  {post.title}
-                </Link>
-                <Box pt={2}>
-                  <Text fontSize={1} dateTime={post.date}>
-                    {post.date}
-                  </Text>
-                </Box>
-              </Text>
+              <div key={post.title}>
+                <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                <div>
+                  <div dateTime={post.date}>{post.date}</div>
+                </div>
+              </div>
             ))}
-          </Box>
-        </Flex>
-      </Text>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

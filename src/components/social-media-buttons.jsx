@@ -1,7 +1,8 @@
+/** @jsx jsx */
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Twitter, Facebook, HackerNews, Reddit } from 'react-social-sharing'
-import { Flex, Box, Text } from 'rebass'
+import { jsx } from 'theme-ui'
 
 import config from '../../config/website'
 
@@ -18,14 +19,12 @@ const SocialMediaButtons = () => {
   `)
   return (
     <>
-      <Box my={3}>
-        <Box mt={4}>
-          <Text fontFamily="body" fontSize={2}>
-            Share this post ❤️
-          </Text>
-        </Box>
-        <Box ml={-2} mt={2}>
-          <Flex justifyContent="space-between" flexWrap="wrap">
+      <div>
+        <div>
+          <div>Share this post ❤️</div>
+        </div>
+        <div>
+          <div sx={{ justifyContent: 'space-between', flexWrap: 'wrap' }}>
             <Twitter
               style={{ color: 'white' }}
               message={`${data.contentfulBlogPost.title} by ${config.userTwitter}`}
@@ -34,9 +33,9 @@ const SocialMediaButtons = () => {
             <Reddit style={{ color: 'white' }} link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`} />
             <Facebook style={{ color: 'white' }} link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`} />
             <HackerNews style={{ color: 'white' }} link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`} />
-          </Flex>
-        </Box>
-      </Box>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

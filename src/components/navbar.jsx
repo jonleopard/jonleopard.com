@@ -1,10 +1,10 @@
-/* eslint-disable */
-// TODO: disabling until I can reconfigure rules
 /** @jsx jsx */
-import { Flex, Box, Text } from "rebass";
-import { jsx, css, keyframes } from "@emotion/core";
+import { jsx, useColorMode } from 'theme-ui'
+import { css, keyframes } from '@emotion/core'
+import { Sun, Moon } from 'react-feather'
 
-import { Link } from "gatsby";
+import { Link } from 'gatsby'
+import Container from './container'
 
 const fade = keyframes`
   from {
@@ -13,42 +13,52 @@ const fade = keyframes`
   to {
       opacity: 1;
     }
-`;
-
-// const AnimatedBlock = styled.div`
-//   display: inline-block;
-//   animation: ${fade} 0.5s alternate infinite;
-// `;
+`
 
 const NavBar = () => {
+  const [colorMode, setColorMode] = useColorMode()
   return (
-    <Text fontSize={2} fontFamily="body">
-      <Box width={1}>
-        <Flex alignItems="center" py={3}>
-          <Box>
-            <Link to="/">
-              jonleopard.com
-              <div
-                css={css`
-                  animation: ${fade} 0.5s alternate infinite;
-                  display: inline-block;
-                `}
-              >
-                ▌
-              </div>
-            </Link>
-          </Box>
-          <Box mx="auto" />
-          <Box pr={2}>
-            <Link to="/profile">profile</Link>
-          </Box>
-          <Box pr={2}>
-            <Link to="/blog">blog</Link>
-          </Box>
-        </Flex>
-      </Box>
-    </Text>
-  );
-};
+    <header>
+      <Container>
+        <div
+          sx={{
+            py: '10px',
+            mx: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
+          <Link to="/" sx={{ py: 2 }}>
+            jonleopard.com
+            <div
+              css={css`
+                animation: ${fade} 0.5s alternate infinite;
+                display: inline-block;
+              `}
+            >
+              ▌
+            </div>
+          </Link>
+          <div sx={{ mx: 'auto' }} />
+          <Link to="/profile" sx={{ variant: 'styles.navlink', ml: 3 }}>
+            profile
+          </Link>
+          <Link to="/blog" sx={{ variant: 'styles.navlink', ml: 3 }}>
+            blog
+          </Link>
+          <div
+            sx={{ ml: 3 }}
+            title="Toggle Color Mode"
+            onClick={e => {
+              setColorMode(colorMode === 'default' ? 'dark' : 'default')
+            }}
+          >
+            {colorMode === 'default' ? <Sun size={22} /> : <Moon size={22} />}
+          </div>
+        </div>
+      </Container>
+    </header>
+  )
+}
 
-export default NavBar;
+export default NavBar
