@@ -3,15 +3,19 @@ import Prism from '@theme-ui/prism'
 // import { toTheme } from "@theme-ui/typography";
 // import trajan from "typography-theme-trajan";
 import { system } from '@theme-ui/presets'
+import nightOwl from '@theme-ui/prism/presets/night-owl.json'
 // import merge from "lodash.merge";
 
 export default {
-  initialColorMode: 'default',
   ...system,
+  initialColorMode: 'default',
   sizes: {
     container: 560,
   },
   styles: {
+    pre: {
+      ...nightOwl,
+    },
     ...system.styles,
   },
 }

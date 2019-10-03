@@ -97,8 +97,18 @@ const Head = props => {
       <html lang={config.siteLanguage} />
       <title>{title}</title>
       <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicons/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicons/favicon-16x16.png"
+      />
       <meta name="Jon Leopard" content="jonleopard.com" />
       <link rel="shortcut icon" href="favicon.ico" />
       <meta name="msapplication-TileColor" content={config.backgroundColor} />
@@ -113,18 +123,28 @@ const Head = props => {
       <meta property="og:image" content={image} />
       <meta property="og:image:alt" content={description} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={config.userTwitter ? config.userTwitter : ''} />
+      <meta
+        name="twitter:creator"
+        content={config.userTwitter ? config.userTwitter : ''}
+      />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <meta name="twitter:image:alt" content={description} />
-      <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(schemaOrgWebPage)}
+      </script>
       <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
     </Helmet>
   )
 }
 
-const SEO = props => <StaticQuery query={querySEO} render={data => <Head {...props} data={data} />} />
+const SEO = props => (
+  <StaticQuery
+    query={querySEO}
+    render={data => <Head {...props} data={data} />}
+  />
+)
 
 export default SEO
 

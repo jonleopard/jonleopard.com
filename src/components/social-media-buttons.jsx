@@ -30,9 +30,18 @@ const SocialMediaButtons = () => {
               message={`${data.contentfulBlogPost.title} by ${config.userTwitter}`}
               link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`}
             />
-            <Reddit style={{ color: 'white' }} link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`} />
-            <Facebook style={{ color: 'white' }} link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`} />
-            <HackerNews style={{ color: 'white' }} link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`} />
+            <Reddit
+              style={{ color: 'white' }}
+              link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`}
+            />
+            <Facebook
+              style={{ color: 'white' }}
+              link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`}
+            />
+            <HackerNews
+              style={{ color: 'white' }}
+              link={`${config.siteUrl}/blog/${data.contentfulBlogPost.slug}`}
+            />
           </div>
         </div>
       </div>

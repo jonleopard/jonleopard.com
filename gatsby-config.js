@@ -38,14 +38,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-matomo',
-      options: {
-        siteId: '1',
-        matomoUrl: 'https://jonleopard.matomo.cloud/',
-        siteUrl: 'https://jonleopard.com',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,

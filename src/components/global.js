@@ -1,7 +1,7 @@
 import React from 'react'
 import { Global } from '@emotion/core'
 
-export default props => (
+const global = props => (
   <Global
     styles={theme => ({
       body: {
@@ -11,3 +11,5 @@ export default props => (
     })}
   />
 )
+
+export default global

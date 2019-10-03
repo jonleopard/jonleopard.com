@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 
-export default props => (
+const container = props => (
   <div
     {...props}
     sx={{
@@ -11,3 +11,5 @@ export default props => (
     }}
   />
 )
+
+export default container

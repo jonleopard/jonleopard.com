@@ -4,7 +4,7 @@
   "version": "5.0.0",
   "author": "Jon Leopard <contact@jonleopard.com>",
   "dependencies": {
-    "@emotion/core": "^10.0.17",
+    "@emotion/core": "^10.0.20",
     "@mdx-js/react": "^1.5.0",
     "@theme-ui/presets": "^0.2.42",
     "@theme-ui/prism": "^0.2.40",
@@ -13,7 +13,6 @@
     "gatsby-cli": "^2.7.53",
     "gatsby-plugin-gtag": "^1.0.11",
     "gatsby-plugin-manifest": "^2.2.20",
-    "gatsby-plugin-matomo": "^0.7.2",
     "gatsby-plugin-netlify": "^2.1.17",
     "gatsby-plugin-offline": "^3.0.11",
     "gatsby-plugin-react-helmet": "^3.1.10",
@@ -32,7 +31,7 @@
     "lodash.merge": "^4.6.2",
     "prismjs": "^1.17.1",
     "react": "^16.10.1",
-    "react-dom": "^16.10.1",
+    "react-dom": "npm:@hot-loader/react-dom",
     "react-feather": "^2.0.3",
     "react-helmet": "^5.2.1",
     "react-instafeed": "^1.0.0",
@@ -44,7 +43,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "babel-preset-react": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.3.0",
@@ -78,9 +77,9 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "precommit": "lint-staged",
+    "format": "prettier \"**/*.{md,mdx,yml} \" --write",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "lint:ci": "yarn lint --format junit -o results/eslint/result.xml",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:ci": "yarn lint --format junit -o results/eslint/result.xml"
   }
 }

@@ -16,7 +16,10 @@ const Template = ({ data }) => {
       <article>
         <>
           <div sx={{ pt: [20, 80], pb: 2 }}>
-            <div>Written on {data.contentfulBlogPost.date}</div>
+            <div>
+              Written on
+              {data.contentfulBlogPost.date}
+            </div>
             <div>
               <PageHeader title={data.contentfulBlogPost.title} />
             </div>

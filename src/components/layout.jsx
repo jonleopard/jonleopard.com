@@ -1,7 +1,6 @@
 /** @jsx jsx */
-import React from 'react'
-import { useState } from 'react'
-import { ThemeProvider, jsx, Styled, ColorMode } from 'theme-ui'
+import React, { useState } from 'react'
+import { jsx, Styled } from 'theme-ui'
 import { useTransition, animated } from 'react-spring'
 
 // Components

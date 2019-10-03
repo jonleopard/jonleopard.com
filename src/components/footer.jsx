@@ -1,7 +1,5 @@
 /** @jsx jsx */
-import React from 'react'
 import { jsx, Flex, Box } from 'theme-ui'
-import { Link } from 'gatsby'
 
 import Container from './container'
 
@@ -27,7 +25,7 @@ const Footer = () => (
           py: 4,
         }}
       >
-        <Link
+        <a
           sx={{ variant: 'styles.navlink', p: 2 }}
           target="_blank"
           rel="noopener noreferrer me"
@@ -35,8 +33,8 @@ const Footer = () => (
           itemProp="sameAs"
         >
           github
-        </Link>
-        <Link
+        </a>
+        <a
           sx={{ variant: 'styles.navlink', p: 2 }}
           target="_blank"
           rel="noopener noreferrer me"
@@ -44,8 +42,8 @@ const Footer = () => (
           itemProp="sameAs"
         >
           twitter
-        </Link>
-        <Link
+        </a>
+        <a
           sx={{ variant: 'styles.navlink', p: 2 }}
           target="_blank"
           rel="noopener noreferrer me"
@@ -53,8 +51,8 @@ const Footer = () => (
           itemProp="sameAs"
         >
           stack overflow
-        </Link>
-        <Link
+        </a>
+        <a
           sx={{ variant: 'styles.navlink', p: 2 }}
           target="_blank"
           rel="noopener noreferrer me"
@@ -62,8 +60,8 @@ const Footer = () => (
           itemProp="sameAs"
         >
           telegram
-        </Link>
-        <Link
+        </a>
+        <a
           sx={{ variant: 'styles.navlink', p: 2 }}
           target="_blank"
           rel="noopener noreferrer me"
@@ -71,9 +69,9 @@ const Footer = () => (
           itemProp="sameAs"
         >
           gpg
-        </Link>
+        </a>
         <div sx={{ mx: 'auto' }} />
-        <div sx={{ p: 2 }}>&copy; {CURRENT_YEAR} Jon Leopard</div>
+        <div sx={{ p: 2 }}>&copy;{CURRENT_YEAR} Jon Leopard</div>
       </div>
     </Container>
   </footer>

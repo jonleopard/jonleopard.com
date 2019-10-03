@@ -49,9 +49,12 @@ const NavBar = () => {
           <div
             sx={{ ml: 3 }}
             title="Toggle Color Mode"
+            tabIndex={0}
+            role="button"
             onClick={e => {
               setColorMode(colorMode === 'default' ? 'dark' : 'default')
             }}
+            onKeyDown={setColorMode}
           >
             {colorMode === 'default' ? <Sun size={22} /> : <Moon size={22} />}
           </div>
