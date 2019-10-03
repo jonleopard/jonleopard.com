@@ -9,6 +9,7 @@
     "@theme-ui/presets": "^0.2.42",
     "@theme-ui/prism": "^0.2.40",
     "@theme-ui/typography": "^0.2.40",
+    "a11y-react-emoji": "^1.1.1",
     "gatsby": "^2.15.28",
     "gatsby-cli": "^2.7.53",
     "gatsby-plugin-gtag": "^1.0.11",

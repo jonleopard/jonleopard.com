@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Heading, Flex, Box } from 'theme-ui'
 import { Link } from 'gatsby'
+import Emoji from 'a11y-react-emoji'
 import Layout from '../components/layout'
 
 const profile = () => (
@@ -25,9 +26,7 @@ const profile = () => (
 
     <Flex sx={{ flexWrap: 'wrap', mx: '-2' }}>
       <Box sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
-        <span role="img" aria-label="Moon">
-          🌙
-        </span>
+        <Emoji symbol="🌙" role="img" aria-label="Moon" />
         <a
           sx={{ color: 'inherit' }}
           href="https://github.com/jonleopard/lunarphase"
@@ -40,9 +39,7 @@ const profile = () => (
       </Box>
 
       <Box sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
-        <span role="img" aria-label="Tools">
-          🛠
-        </span>
+        <Emoji symbol="🛠" role="img" aria-label="Tools"/>
         <a
           sx={{ color: 'inherit' }}
           href="https://github.com/jonleopard/dotfiles"
@@ -55,9 +52,7 @@ const profile = () => (
       </Box>
 
       <Box sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
-        <span role="img" aria-label="Hat">
-          🎓
-        </span>
+        <Emoji symbol="🎓" role="img" aria-label="Hat" />
         <a
           sx={{ color: 'inherit' }}
           href="https://github.com/jonleopard/dotfiles"
@@ -70,9 +65,7 @@ const profile = () => (
       </Box>
 
       <Box sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
-        <span role="img" aria-label="Hat">
-          ✍🏻
-        </span>
+        <Emoji symbol="✍️" role="img" aria-label="Writing" />
         <a
           sx={{ color: 'inherit' }}
           href="https://github.com/jonleopard/til"
@@ -93,14 +86,14 @@ const profile = () => (
 
     <Flex sx={{ flexWrap: 'wrap', mx: -2 }}>
       <Box sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
-        <div sx={{ fontSize: 3, mb: 2 }}>✨ Frontend</div>
+        <div sx={{ fontSize: 3, mb: 2 }}><Emoji symbol="✨" role="img" aria-label="stars"/>Frontend</div>
         <div>React - Vue - Redux - NextJS</div>
         <div>Webpack - Babel - Prettier - ESLint</div>
         <div>GatsbyJS - Bootstrap - TailwindCSS - Styled Components</div>
       </Box>
 
       <Box sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
-        <div sx={{ fontSize: 3, mb: 2 }}>⚡Backend</div>
+        <div sx={{ fontSize: 3, mb: 2 }}><Emoji symbol="⚡" role="img" aria-label="lightning"/>Backend</div>
         <div>Node - Go - PHP - Laravel</div>
         <div>SQL - Docker - GraphQL</div>
       </Box>
