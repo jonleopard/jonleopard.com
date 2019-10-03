@@ -61,12 +61,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json}": [
-      "git add"
-    ]
-  },
-  "keywords": [
+   "keywords": [
     "Jon Leopard",
     "gatsby",
     "blog",
