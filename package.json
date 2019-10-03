@@ -61,7 +61,7 @@
       "pre-commit": "lint-staged"
     }
   },
-   "keywords": [
+  "keywords": [
     "Jon Leopard",
     "gatsby",
     "blog",
