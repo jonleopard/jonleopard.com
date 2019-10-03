@@ -59,7 +59,7 @@ const NavBar = () => {
             blog
           </Link>
           <div
-            sx={{ ml: 3 }}
+            sx={{ ml: 3, outline: 'none' }}
             title="Toggle Color Mode"
             tabIndex={0}
             role="button"
