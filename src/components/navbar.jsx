@@ -28,7 +28,7 @@ const NavBar = () => {
             alignItems: 'center',
           }}
         >
-          <Link to="/" sx={{ py: 2 }}>
+          <Link to="/" sx={{ color: 'inherit', py: 2 }}>
             jonleopard.com
             <div
               css={css`
@@ -40,10 +40,22 @@ const NavBar = () => {
             </div>
           </Link>
           <div sx={{ mx: 'auto' }} />
-          <Link to="/profile" sx={{ variant: 'styles.navlink', ml: 3 }}>
+          <Link
+            to="/profile"
+            activeClassName="active"
+            sx={{
+              color: 'inherit',
+              '&.active': { color: 'primary' },
+              ml: 3,
+            }}
+          >
             profile
           </Link>
-          <Link to="/blog" sx={{ variant: 'styles.navlink', ml: 3 }}>
+          <Link
+            to="/blog"
+            activeClassName="active"
+            sx={{ color: 'inherit', '&.active': { color: 'primary' }, ml: 3 }}
+          >
             blog
           </Link>
           <div

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Link, graphql } from 'gatsby'
-import { jsx } from 'theme-ui'
+import { jsx, Box } from 'theme-ui'
 
 import Layout from '../components/layout'
 
@@ -9,21 +9,24 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
+      <Box sx={{ width: ['100%', '50%'], pt: 80 }}>
+        <h1 sx={{ fontSize: [7, 6], mb: 3 }}>Blog</h1>
+      </Box>
       <div>
         <div>
-          <div>Blog</div>
-        </div>
-        <div>
-          <div>
-            {posts.map(({ node: post }) => (
-              <div key={post.title}>
-                <Link to={`/blog/${post.slug}`}>{post.title}</Link>
-                <div>
-                  <div dateTime={post.date}>{post.date}</div>
-                </div>
-              </div>
-            ))}
-          </div>
+          {posts.map(({ node: post }) => (
+            <div key={post.title} sx={{ mb: 2 }}>
+              <Link
+                sx={{ fontSize: 3, color: 'inherit' }}
+                to={`/blog/${post.slug}`}
+              >
+                {post.title}
+              </Link>
+              <Box>
+                <div dateTime={post.date}>{post.date}</div>
+              </Box>
+            </div>
+          ))}
         </div>
       </div>
     </Layout>

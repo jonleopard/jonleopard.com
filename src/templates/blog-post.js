@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Box } from 'gatsby'
 import { jsx } from 'theme-ui'
 
 import Layout from '../components/layout'
@@ -15,16 +15,10 @@ const Template = ({ data }) => {
       <SEO />
       <article>
         <>
-          <div sx={{ pt: [20, 80], pb: 2 }}>
-            <div>
-              Written on
-              {data.contentfulBlogPost.date}
-            </div>
-            <div>
-              <PageHeader title={data.contentfulBlogPost.title} />
-            </div>
-          </div>
-
+          <PageHeader
+            title={data.contentfulBlogPost.title}
+            subTitle={data.contentfulBlogPost.date}
+          />
           <SocialMediaButtons />
           <div
             dangerouslySetInnerHTML={{

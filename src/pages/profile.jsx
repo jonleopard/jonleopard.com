@@ -29,6 +29,7 @@ const profile = () => (
           🌙
         </span>
         <a
+          sx={{ color: 'inherit' }}
           href="https://github.com/jonleopard/lunarphase"
           target="_blank"
           rel="noopener noreferrer"
@@ -43,6 +44,7 @@ const profile = () => (
           🛠
         </span>
         <a
+          sx={{ color: 'inherit' }}
           href="https://github.com/jonleopard/dotfiles"
           target="_blank"
           rel="noopener noreferrer"
@@ -57,6 +59,7 @@ const profile = () => (
           🎓
         </span>
         <a
+          sx={{ color: 'inherit' }}
           href="https://github.com/jonleopard/dotfiles"
           target="_blank"
           rel="noopener noreferrer"
@@ -71,6 +74,7 @@ const profile = () => (
           ✍🏻
         </span>
         <a
+          sx={{ color: 'inherit' }}
           href="https://github.com/jonleopard/til"
           target="_blank"
           rel="noopener noreferrer"

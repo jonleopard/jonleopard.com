@@ -1,25 +1,22 @@
 /** @jsx jsx */
 import React from 'react'
-import { jsx } from 'theme-ui'
+import { jsx, Flex, Box, Header } from 'theme-ui'
 
 import Layout from '../components/layout'
 
 const Index = () => (
   <>
     <Layout>
-      <div>
-        <div>
-          <div>
-            You've reached the personal blog of
-            <br /> Jon Leopard
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
+      <Box sx={{ width: '100%', mt: [40, 80] }}>
+        <Flex sx={{ flexDirection: 'column' }}>
+          <h1>You've reached the personal blog of Jon Leopard</h1>
+        </Flex>
+      </Box>
+      <Box>
+        <h3>
           <div>a web developer based in Paris</div>
-        </div>
-      </div>
+        </h3>
+      </Box>
     </Layout>
   </>
 )
