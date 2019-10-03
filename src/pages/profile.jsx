@@ -39,7 +39,7 @@ const profile = () => (
       </Box>
 
       <Box sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
-        <Emoji symbol="🛠" role="img" aria-label="Tools"/>
+        <Emoji symbol="🛠" role="img" aria-label="Tools" />
         <a
           sx={{ color: 'inherit' }}
           href="https://github.com/jonleopard/dotfiles"
@@ -86,14 +86,20 @@ const profile = () => (
 
     <Flex sx={{ flexWrap: 'wrap', mx: -2 }}>
       <Box sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
-        <div sx={{ fontSize: 3, mb: 2 }}><Emoji symbol="✨" role="img" aria-label="stars"/>Frontend</div>
+        <div sx={{ fontSize: 3, mb: 2 }}>
+          <Emoji symbol="✨" role="img" aria-label="stars" />
+          Frontend
+        </div>
         <div>React - Vue - Redux - NextJS</div>
         <div>Webpack - Babel - Prettier - ESLint</div>
         <div>GatsbyJS - Bootstrap - TailwindCSS - Styled Components</div>
       </Box>
 
       <Box sx={{ width: ['100%', '50%'], px: 2, py: 2 }}>
-        <div sx={{ fontSize: 3, mb: 2 }}><Emoji symbol="⚡" role="img" aria-label="lightning"/>Backend</div>
+        <div sx={{ fontSize: 3, mb: 2 }}>
+          <Emoji symbol="⚡" role="img" aria-label="lightning" />
+          Backend
+        </div>
         <div>Node - Go - PHP - Laravel</div>
         <div>SQL - Docker - GraphQL</div>
       </Box>
