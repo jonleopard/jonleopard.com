@@ -20,8 +20,8 @@ This is the source code for [jonleopard.com](https://jonleopard.com).
 - CMS
   - [Contentful](https://www.contentful.com/)
 - Styling
-  - [Styled Components](https://www.styled-components.com/)
-  - [Rebass](https://rebassjs.org/)
+  - [Emotion](https://emotion.sh/docs/introduction)
+  - [Theme-UI](https://theme-ui.com/)
 - Hosting
   - [Netlify](https://www.netlify.com/)
 - intel Pentium 4 HT inside
