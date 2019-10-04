@@ -19,7 +19,6 @@ const Template = ({ data }) => {
             title={data.contentfulBlogPost.title}
             subTitle={data.contentfulBlogPost.date}
           />
-          <SocialMediaButtons />
           <div
             dangerouslySetInnerHTML={{
               __html: data.contentfulBlogPost.body.childMarkdownRemark.html,

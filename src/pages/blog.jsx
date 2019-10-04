@@ -3,15 +3,14 @@ import { Link, graphql } from 'gatsby'
 import { jsx, Box } from 'theme-ui'
 
 import Layout from '../components/layout'
+import PageHeader from '../components/page-header'
 
 const BlogIndex = ({ data }) => {
   const { edges: posts } = data.allContentfulBlogPost
 
   return (
     <Layout>
-      <Box sx={{ width: ['100%', '50%'], pt: 80 }}>
-        <h1 sx={{ fontSize: [7, 6], mb: 3 }}>Blog</h1>
-      </Box>
+      <PageHeader title="Blog" />
       <div>
         <div>
           {posts.map(({ node: post }) => (

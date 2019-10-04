@@ -8,9 +8,6 @@ const CURRENT_YEAR = new Date().getFullYear()
 const Footer = () => (
   <footer
     sx={{
-      flexWrap: 'wrap',
-      alignItems: 'center',
-      p: 2,
       variant: 'styles.footer',
     }}
   >
@@ -18,10 +15,10 @@ const Footer = () => (
       <div
         sx={{
           display: 'flex',
-          flexWrap: 'wrap',
+          flexDirection: ['column', 'row'],
           alignItems: 'center',
-          mx: 'auto',
-          px: 2,
+          mx: -2,
+          mt: 5,
           py: 4,
         }}
       >
@@ -70,6 +67,7 @@ const Footer = () => (
         >
           gpg
         </a>
+
         <div sx={{ mx: 'auto' }} />
         <div sx={{ p: 2 }}>&copy; {CURRENT_YEAR} Jon Leopard</div>
       </div>

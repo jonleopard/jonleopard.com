@@ -1,4 +1,5 @@
 node_modules
+results/
 .cache/
 public/
 .DS_Store
