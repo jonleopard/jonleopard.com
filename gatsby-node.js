@@ -65,10 +65,8 @@ exports.createPages = ({ graphql, actions }) => {
     if (result.errors) {
       throw result.errors
     }
-
     // Grab template for blog posts
     const blogTemplate = path.resolve(`./src/templates/blog-post.js`)
-    // For each result, create a page.
     _.each(result.data.allContentfulBlogPost.edges, edge => {
       createPage({
         path: `/blog/${edge.node.slug}/`,

@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import React, { useState } from 'react'
-import { jsx, Styled } from 'theme-ui'
+import { jsx, Styled, ThemeProvider } from 'theme-ui'
 import { useTransition, animated } from 'react-spring'
+import Prism from '@theme-ui/prism'
 
 // Components
 import Global from './global'
@@ -9,6 +10,11 @@ import SEO from './SEO'
 import Footer from './footer'
 import NavBar from './navbar'
 import Main from './main'
+
+const components = {
+  pre: ({ children }) => <>{children}</>,
+  code: Prism,
+}
 
 const Layout = ({ children, location }) => {
   // Page transition hook
@@ -29,15 +35,16 @@ const Layout = ({ children, location }) => {
         }}
       >
         <SEO />
-
         <Global />
         <NavBar />
         <Main>
-          {transitions.map(({ item, key, props }) => (
-            <animated.div key={key} style={props}>
-              {children}
-            </animated.div>
-          ))}
+          <ThemeProvider components={components}>
+            {transitions.map(({ item, key, props }) => (
+              <animated.div key={key} style={props}>
+                {children}
+              </animated.div>
+            ))}
+          </ThemeProvider>
         </Main>
         <Footer />
       </div>

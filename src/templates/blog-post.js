@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react'
-import { graphql, Box } from 'gatsby'
-import { jsx } from 'theme-ui'
+import { graphql } from 'gatsby'
+import { jsx, Box } from 'theme-ui'
 
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
@@ -19,7 +19,7 @@ const Template = ({ data }) => {
             title={data.contentfulBlogPost.title}
             subTitle={data.contentfulBlogPost.date}
           />
-          <div
+          <Box
             dangerouslySetInnerHTML={{
               __html: data.contentfulBlogPost.body.childMarkdownRemark.html,
             }}
