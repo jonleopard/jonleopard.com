@@ -55,6 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
           edges {
             node {
               slug
+              title
               id
             }
           }
@@ -66,14 +67,15 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
     // Grab template for blog posts
-    const blogTemplate = path.resolve(`./src/templates/blog-post.js`)
-    _.each(result.data.allContentfulBlogPost.edges, edge => {
+    const blogPost = path.resolve(`./src/templates/blog-post.js`)
+
+    _.each(result.data.allContentfulBlogPost.edges, post => {
       createPage({
-        path: `/blog/${edge.node.slug}/`,
-        component: slash(blogTemplate),
+        path: `/blog/${post.node.slug}/`,
+        component: slash(blogPost),
         context: {
-          slug: edge.node.slug,
-          id: edge.node.id,
+          slug: post.node.slug,
+          id: post.node.id,
         },
       })
     })

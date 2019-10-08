@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react'
 import { graphql } from 'gatsby'
-import { jsx, Box } from 'theme-ui'
+import { jsx, Box, Styled } from 'theme-ui'
 
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
@@ -9,22 +9,18 @@ import PageHeader from '../components/page-header'
 import SocialMediaButtons from '../components/social-media-buttons'
 
 const Template = ({ data }) => {
+  const { title, date, body } = data.contentfulBlogPost
   if (!data) return null
   return (
     <Layout>
       <SEO />
       <article>
         <>
-          <PageHeader
-            title={data.contentfulBlogPost.title}
-            subTitle={data.contentfulBlogPost.date}
-          />
-          <Box
+          <PageHeader title={title} subTitle={date} />
+          <Styled.root
             dangerouslySetInnerHTML={{
               __html: data.contentfulBlogPost.body.childMarkdownRemark.html,
             }}
-            id="top"
-            className="content"
           />
         </>
       </article>
