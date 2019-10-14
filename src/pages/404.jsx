@@ -1,10 +1,11 @@
 import React from 'react'
+import layout from '../components/layout'
 
 const NotFoundPage = () => (
-  <div>
+  <layout>
     <h1>404 - NOT FOUND</h1>
     <p>I'm sorry Dave, I'm afraid I can't do that...</p>
-  </div>
+  </layout>
 )
 
 export default NotFoundPage
