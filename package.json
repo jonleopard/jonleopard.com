@@ -8,7 +8,7 @@
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
     "@theme-ui/presets": "^0.2.44",
-    "@theme-ui/prism": "^0.2.46",
+    "@theme-ui/prism": "^0.2.50",
     "@theme-ui/typography": "^0.2.46",
     "a11y-react-emoji": "^1.1.1",
     "gatsby": "^2.18.6",
