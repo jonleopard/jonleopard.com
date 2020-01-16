@@ -4,7 +4,7 @@ This is the source code for [jonleopard.com](https://jonleopard.com).
 
 ### Requirements for local development
 
-- [Node](https://nodejs.org/en/) (I'm using v11.14.0)
+- [Node](https://nodejs.org/en/) (I'm using v12.13.1)
 - [Gatsby-cli](https://www.gatsbyjs.org/docs/gatsby-cli/)
 
 ### Installing
