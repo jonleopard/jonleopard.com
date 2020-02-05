@@ -12,19 +12,19 @@ executors:
 aliases:
   restore_cache: &restore_cache
     restore_cache:
-      name: Restore Yarn Package Cache
+      name: Restore NPM Package Cache
       keys:
-        - v{{ .Environment.versionCache }}-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+        - v{{ .Environment.versionCache }}-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}-{{ checksum ".circleci/config.yml" }}
 
   install_node_modules: &install_node_modules
     run:
-      name: Install Yarn Packages
-      command: yarn install --frozen-lockfile
+      name: Install NPM Packages
+      command: npm install
 
   save_cache: &save_cache
     save_cache:
-      name: Save Yarn Package Cache
-      key: v{{ .Environment.versionCache }}-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+      name: Save NPM Package Cache
+      key: v{{ .Environment.versionCache }}-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}-{{ checksum ".circleci/config.yml" }}
       paths:
         - /home/circleci/.cache
 
@@ -48,7 +48,7 @@ jobs:
       - <<: *save_cache
       - run:
           name: Run ESLint
-          command: yarn lint:ci
+          command: npm run lint:ci
       - <<: *store_results
       - <<: *store_results_artifacts
 
