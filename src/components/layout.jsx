@@ -11,6 +11,7 @@ import Footer from './footer'
 import NavBar from './navbar'
 import Main from './main'
 
+/*eslint-disable */
 const components = {
   pre: ({ children }) => <>{children}</>,
   code: Prism,
