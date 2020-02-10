@@ -10,7 +10,7 @@ This is the source code for [jonleopard.com](https://jonleopard.com).
 ### Installing
 
 1. `git clone git@github.com:jonleopard/jonleopard.com.git`
-2. `cd jonleopard.com && yarn && yarn dev`
+2. `cd jonleopard.com && npm install && npm run dev`
 3. Site should now be running on http://localhost:8000
 
 ### Stack
