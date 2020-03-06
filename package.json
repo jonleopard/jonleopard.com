@@ -11,7 +11,7 @@
     "@theme-ui/prism": "^0.3.0",
     "@theme-ui/typography": "^0.3.0",
     "a11y-react-emoji": "^1.1.2",
-    "gatsby": "^2.19.28",
+    "gatsby": "^2.19.30",
     "gatsby-cli": "^2.10.0",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-manifest": "^2.2.42",
