@@ -26,6 +26,7 @@
     "jest": true
   },
   "rules": {
+    "prettier/prettier": ["error"],
     "no-unused-vars": [
       0,
       {
@@ -80,15 +81,6 @@
       }
     ],
     "indent": ["error", 2, { "SwitchCase": 1 }],
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "es5",
-        "semi": false,
-        "singleQuote": true,
-        "printWidth": 80
-      }
-    ],
     "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/anchor-is-valid": [
       "warn",
