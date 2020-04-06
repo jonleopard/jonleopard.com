@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, StaticQuery } from 'gatsby'
 import config from '../../config/website'
 
-const Head = props => {
+const Head = (props) => {
   const {
     data: {
       site: { buildTime },
@@ -139,10 +139,10 @@ const Head = props => {
   )
 }
 
-const SEO = props => (
+const SEO = (props) => (
   <StaticQuery
     query={querySEO}
-    render={data => <Head {...props} data={data} />}
+    render={(data) => <Head {...props} data={data} />}
   />
 )
 

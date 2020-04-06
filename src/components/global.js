@@ -1,9 +1,9 @@
 import React from 'react'
 import { Global } from '@emotion/core'
 
-const global = props => (
+const global = (props) => (
   <Global
-    styles={theme => ({
+    styles={(theme) => ({
       body: {
         color: theme.colors.text,
         backgroundColor: theme.colors.background,

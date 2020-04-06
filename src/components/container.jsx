@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 
-const container = props => (
+const container = (props) => (
   <div
     {...props}
     sx={{

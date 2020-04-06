@@ -63,7 +63,7 @@ const NavBar = () => {
             title="Toggle Color Mode"
             tabIndex={0}
             role="button"
-            onClick={e => {
+            onClick={() => {
               setColorMode(colorMode === 'default' ? 'dark' : 'default')
             }}
             onKeyDown={setColorMode}
