@@ -62,14 +62,14 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
+  ).then((result) => {
     if (result.errors) {
       throw result.errors
     }
     // Grab template for blog posts
-    const blogPost = path.resolve(`./src/templates/blog-post.js`)
+    const blogPost = path.resolve(`./src/templates/blog-post.jsx`)
 
-    _.each(result.data.allContentfulBlogPost.edges, post => {
+    _.each(result.data.allContentfulBlogPost.edges, (post) => {
       createPage({
         path: `/blog/${post.node.slug}/`,
         component: slash(blogPost),
