@@ -5,7 +5,7 @@ import { DefaultSeo } from 'next-seo';
 
 const SeoConfig = {
   title: 'Jon Leopard',
-  description: 'Product designer',
+  description: 'Web Developer',
   openGraph: {
     type: 'website',
     locale: 'en_US',
