@@ -5,7 +5,6 @@ This is the source code for [jonleopard.com](https://jonleopard.com).
 ### Requirements for local development
 
 - [Node](https://nodejs.org/en/) (I'm using v12.13.1)
-- [Gatsby-cli](https://www.gatsbyjs.org/docs/gatsby-cli/)
 
 ### Installing
 
@@ -16,12 +15,13 @@ This is the source code for [jonleopard.com](https://jonleopard.com).
 ### Stack
 
 - Site Generator
-  - [GatsbyJS](https://www.gatsbyjs.org/)
+  - [NextJS](https://nextjs.org/)
 - CMS
   - [Contentful](https://www.contentful.com/)
 - Styling
-  - [Emotion](https://emotion.sh/docs/introduction)
-  - [Theme-UI](https://theme-ui.com/)
+  - [TailwindCSS](https://tailwindcss.com/)
+  - [twin.macro](https://github.com/ben-rogerson/twin.macro)
+  - [Styled Components](https://styled-components.com/)
 - Hosting
   - [Netlify](https://www.netlify.com/)
 - intel Pentium 4 HT inside
