@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 import Emoji from 'a11y-react-emoji';
 import { getLayout } from '../components/SiteLayout';
 
-const StyledImage = tw.img`max-w-xs rounded overflow-hidden shadow-lg absolute z-50`;
+const StyledImage = tw.img`max-w-xs rounded overflow-hidden shadow-lg absolute z-50 left-0`;
 
 // TODO: This should be better...
 function PreviewCard({ src, alt, text }) {
