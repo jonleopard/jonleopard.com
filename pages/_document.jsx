@@ -37,7 +37,14 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <script
+            async
+            defer
+            data-domain="jonleopard.com"
+            src="https://plausible.io/js/plausible.js"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
