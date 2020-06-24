@@ -35,12 +35,12 @@ function Profile() {
             Profile
           </h1>
           <p>
-            I'm a self taught web developer with a background in
-            design. This website serves as a medium to get me more
-            involved in the industry, discuss the projects I'm working
-            on, as well as post other random musings. I've been an
-            expat since 2012 and currently reside in France. If you
-            ever find yourself in the Paris region, let's grab a beer!
+            I'm web developer with a background in design. This
+            website serves as a medium to get me more involved in the
+            industry, discuss the projects I'm working on, and other
+            random musings. I've been a US expat since 2012 and
+            currently reside in France. If you ever find yourself in
+            the Paris region, let's grab a beer!
           </p>
           <div>
             <a
@@ -197,8 +197,9 @@ function Profile() {
               </a>
             </p>
             <p>
-              My first laptop was a tangerine iBook G3 that I saved up
-              for. I built my first custom PC in 2003 out of an an{' '}
+              My first laptop was a tangerine iBook G3 that took me
+              forever to save up for. I built my first custom PC in
+              2003 out of an an{' '}
               <a
                 href="https://en.wikipedia.org/wiki/EMachines"
                 tw="text-blue-600 visited:text-purple-600"
@@ -217,8 +218,7 @@ function Profile() {
                 text="hold a pair of sticks"
                 src="/img/drums.jpeg"
               />{' '}
-              and picked up the guitar at 9 picked up the guitar at 9
-              years old.
+              and picked up the guitar when I was 9.
             </p>
 
             <p>
