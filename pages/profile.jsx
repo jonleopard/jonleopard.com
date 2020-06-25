@@ -35,7 +35,7 @@ function Profile() {
             Profile
           </h1>
           <p>
-            I'm web developer with a background in design. This
+            I'm a web developer with a background in design. This
             website serves as a medium to get me more involved in the
             industry, discuss the projects I'm working on, and other
             random musings. I've been a US expat since 2012 and
@@ -235,7 +235,7 @@ function Profile() {
                 src="/img/colorado-bean.png"
                 alt="Image of coffee shop"
               />{' '}
-              in 2001 where I leaned how to pull a good shot, and brew
+              in 2001 where I learned how to pull a good shot, and brew
               a perfect cup of joe.
             </p>
             <p>
