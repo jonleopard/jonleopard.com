@@ -18,21 +18,33 @@ function Footer() {
   const WHAT_YEAR_IS_IT = new Date().getFullYear();
   return (
     <footer>
-      <div tw="w-full flex-col max-w-2xl pt-10 pb-6 px-8 mx-auto flex text-xs font-bold uppercase text-gray-800 items-center">
+      <div tw="w-full flex-col max-w-2xl pt-10 pb-6 px-8 mx-auto flex text-xs font-bold uppercase text-gray-600  items-center">
         <div tw="flex justify-between w-1/2">
-          <a href="https://github.com/jonleopard">
+          <a
+            href="https://github.com/jonleopard"
+            tw="hover:text-purple-600"
+          >
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
-          <a href="https://twitter.com/jonlprd">
+          <a
+            href="https://twitter.com/jonlprd"
+            tw="hover:text-purple-600"
+          >
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
-          <a href="https://stackoverflow.com/users/10541736/jon-leopard">
+          <a
+            href="https://stackoverflow.com/users/10541736/jon-leopard"
+            tw="hover:text-purple-600"
+          >
             <FontAwesomeIcon icon={faStackOverflow} size="2x" />
           </a>
-          <a href="https://t.me/hiJon">
+          <a href="https://t.me/hiJon" tw="hover:text-purple-600">
             <FontAwesomeIcon icon={faTelegram} size="2x" />
           </a>
-          <a href="https://keybase.io/jonleopard/pgp_keys.asc">
+          <a
+            href="https://keybase.io/jonleopard/pgp_keys.asc"
+            tw="hover:text-purple-600"
+          >
             <FontAwesomeIcon icon={faKey} size="2x" />
           </a>
         </div>
