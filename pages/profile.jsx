@@ -132,6 +132,24 @@ function Profile() {
                 a daily basis.
               </p>
             </div>
+
+            <div>
+              <Emoji
+                symbol="🎨"
+                role="img"
+                aria-label="Artist Palette"
+                tw="mr-2"
+              />
+              <a
+                href="https://github.com/jonleopard/base16-papercolor-scheme"
+                tw="text-blue-600 visited:text-purple-600"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                base16 papercolor
+              </a>
+              <p>Papercolor scheme ported for base16</p>
+            </div>
           </div>
         </div>
 
@@ -235,8 +253,8 @@ function Profile() {
                 src="/img/colorado-bean.png"
                 alt="Image of coffee shop"
               />{' '}
-              in 2001 where I learned how to pull a good shot, and brew
-              a perfect cup of joe.
+              in 2001 where I learned how to pull a good shot, and
+              brew a perfect cup of joe.
             </p>
             <p>
               I'm a{' '}
