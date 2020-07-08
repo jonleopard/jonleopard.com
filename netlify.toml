@@ -1,3 +1,7 @@
 [build]
   command = "npm run build && npm run export"
   publish = "out"
+
+[[redirects]]
+  from = "/dotfile-management-with-gnu-stow"
+  to = "/blog/dotfile-management-with-gnu-stow"
