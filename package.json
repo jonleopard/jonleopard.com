@@ -30,8 +30,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
-    "styled-components": "^5.1.1",
-    "twin.macro": "^1.8.0"
+    "styled-components": "^5.2.0",
+    "twin.macro": "^1.8.1"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.11.1",
