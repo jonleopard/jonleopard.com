@@ -23,7 +23,7 @@
     "a11y-react-emoji": "^1.1.2",
     "contentful": "^7.14.6",
     "date-fns": "^2.16.1",
-    "framer-motion": "^2.6.6",
+    "framer-motion": "^2.6.10",
     "next": "^9.5.3",
     "next-seo": "^4.7.3",
     "prismjs": "^1.21.0",
