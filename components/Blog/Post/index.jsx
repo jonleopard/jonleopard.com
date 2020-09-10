@@ -1,10 +1,12 @@
+/** @jsx jsx */
+/* eslint-disable-next-line no-unused-vars */
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { jsx } from '@emotion/core';
 import 'twin.macro';
 import SEO from './SEO';
 import SyntaxHighlighter from '../../SyntaxHighlighter';
 import GlobalPrismStyles from '../../GlobalStyles/prism';
-import GlobalMarkdownStyles from '../../GlobalStyles/markdown';
 import { FormatDate, DateDistance } from '../../Date';
 
 function PostView({ markdown, post }) {
@@ -13,7 +15,6 @@ function PostView({ markdown, post }) {
       <SyntaxHighlighter data={post} />
       <SEO post={post} />
       <GlobalPrismStyles />
-      <GlobalMarkdownStyles />
       <div tw="mb-10">
         <div tw="text-2xl font-bold">{post.title}</div>
         <div tw="flex">
@@ -25,7 +26,10 @@ function PostView({ markdown, post }) {
           />
         </div>
       </div>
-      <ReactMarkdown className="markdown" source={markdown} />
+      <ReactMarkdown
+        tw="w-full prose prose-sm sm:prose lg:prose-lg xl:prose-xl"
+        source={markdown}
+      />
     </>
   );
 }
