@@ -25,7 +25,7 @@
     "a11y-react-emoji": "^1.1.2",
     "contentful": "^7.14.7",
     "date-fns": "^2.16.1",
-    "framer-motion": "^2.8.0",
+    "framer-motion": "^2.9.1",
     "next": "^9.5.5",
     "next-seo": "^4.11.0",
     "prismjs": "^1.22.0",
