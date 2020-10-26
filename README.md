@@ -4,7 +4,7 @@ This is the source code for [jonleopard.com](https://jonleopard.com).
 
 ### Requirements for local development
 
-- [Node](https://nodejs.org/en/) (I'm using v12.18.4)
+- [Node](https://nodejs.org/en/) (I'm using v12.19.0)
 
 ### Installing
 
