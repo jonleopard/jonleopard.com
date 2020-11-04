@@ -1,4 +1,3 @@
-/** @jsx jsx */
 /* eslint-disable-next-line no-unused-vars */
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
