@@ -18,27 +18,27 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "@tailwindcss/typography": "^0.2.0",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-source-maps": "0.0.3",
     "a11y-react-emoji": "^1.1.2",
-    "contentful": "^7.14.12",
+    "contentful": "^7.14.14",
     "date-fns": "^2.16.1",
     "framer-motion": "^2.9.4",
-    "next": "^10.0.1",
+    "next": "^10.0.3",
     "next-seo": "^4.17.0",
     "prismjs": "^1.22.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-markdown": "^5.0.2",
+    "react-markdown": "^5.0.3",
     "styled-components": "^5.2.1",
     "twin.macro": "^1.12.1"
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^10.2.1",
-    "babel-plugin-styled-components": "^1.11.1",
-    "eslint": "^7.13.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.14.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
@@ -46,7 +46,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.2.0"
   },
   "license": "ISC"
 }
