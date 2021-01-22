@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
-import 'twin.macro';
+import tw from 'twin.macro';
 import { getLayout } from '../components/SiteLayout';
 
 const Title = styled.h1`
