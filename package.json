@@ -10,7 +10,8 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "next-on-netlify"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",

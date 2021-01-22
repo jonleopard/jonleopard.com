@@ -1,5 +1,5 @@
 module.exports = {
-  target: 'serverless',
+  target: 'experimental-serverless-trace',
   webpack: (config, { isServer }) => {
     // Fixes packages that depend on fs/module module
     if (!isServer) {
