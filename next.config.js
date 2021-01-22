@@ -1,4 +1,5 @@
 module.exports = {
+  target: 'serverless',
   webpack: (config, { isServer }) => {
     // Fixes packages that depend on fs/module module
     if (!isServer) {
