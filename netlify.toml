@@ -1,8 +1,3 @@
-[build]
-  command   = "npm run build"
-  functions = "out_functions"
-  publish   = "out_publish"
-
 [[redirects]]
   from = "/dotfile-management-with-gnu-stow"
   to = "/blog/dotfile-management-with-gnu-stow"
