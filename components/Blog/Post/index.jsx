@@ -1,6 +1,7 @@
 /* eslint-disable-next-line no-unused-vars */
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { jsx } from '@emotion/core';
 import 'twin.macro';
 import SEO from './SEO';
 import SyntaxHighlighter from '../../SyntaxHighlighter';
