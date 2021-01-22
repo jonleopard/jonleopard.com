@@ -4,3 +4,6 @@
 [[redirects]]
   from = "/dotfile-management-with-gnu-stow"
   to = "/blog/dotfile-management-with-gnu-stow"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
