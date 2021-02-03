@@ -28,7 +28,7 @@ function PreviewCard({ src, alt, text }) {
 
 function Profile() {
   return (
-    <div tw="max-w-3xl mx-auto px-8">
+    <div tw="max-w-3xl mx-auto px-4">
       <div tw="grid grid-cols-1 gap-10">
         <div>
           <h1 tw="block text-5xl font-bold leading-none mb-10">

@@ -7,7 +7,7 @@ import { getLayout } from '../../components/SiteLayout';
 function BlogIndex({ posts, preview }) {
   return (
     <>
-      <div tw="max-w-3xl mx-auto px-8" preview={preview}>
+      <div tw="max-w-3xl mx-auto px-4" preview={preview}>
         <h1 tw="block text-5xl font-bold leading-none mb-10">Blog</h1>
         <BlogList posts={posts} />
       </div>

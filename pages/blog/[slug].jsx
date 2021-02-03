@@ -15,7 +15,7 @@ function BlogPost({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <div tw="max-w-3xl px-8 mx-auto" preview={preview}>
+    <div tw="max-w-3xl px-4 mx-auto" preview={preview}>
       {router.isFallback ? (
         <div tw="text-blue-700 text-sm">Loading...</div>
       ) : (
