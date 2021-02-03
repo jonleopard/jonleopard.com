@@ -9,7 +9,7 @@ function SEO({ post }) {
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="RSS Feed for Jon's Blog"
+          title="RSS Feed for Jon Leopard's Blog"
           href="https://jonleopard.com/blog/rss"
         />
       </Head>
@@ -23,7 +23,7 @@ function SEO({ post }) {
           description: post.excerpt,
           images: [
             {
-              url: `https://jonleopard.com/public/img/blogcards/${post.slug}.png`,
+              url: post.showcaseImage,
               alt: post.title,
             },
           ],
