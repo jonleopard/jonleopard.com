@@ -23,7 +23,9 @@ function SEO({ post }) {
           description: post.excerpt,
           images: [
             {
-              url: post.showcaseImage,
+              url:
+                `https:${post.coverImage.fields.file.url}` ||
+                `https://jonleopard.com/static/img/blog/${post.slug}.png`,
               alt: post.title,
             },
           ],

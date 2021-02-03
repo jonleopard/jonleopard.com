@@ -14,6 +14,7 @@ function PostView({ markdown, post }) {
       <SEO post={post} />
       <GlobalPrismStyles />
       <div tw="mb-10">
+        {/* <img src={post.coverImage.fields.file.url} /> */}
         <div tw="text-3xl font-extrabold mb-1">{post.title}</div>
         <div tw="flex flex-col md:flex-row">
           <FormatDate
