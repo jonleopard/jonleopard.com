@@ -23,12 +23,10 @@ function BlogList({ posts }) {
             as={`/blog/${post.slug}`}
             passHref
           >
-            <a tw="font-bold text-2xl mb-2 text-blue-600 visited:text-purple-600">
-              {post.title}
-            </a>
+            <a tw="text-base mb-2 text-blue-600">{post.title}</a>
           </Link>
 
-          <LineClamp lines={2} tw="text-base" tw="mb-1">
+          <LineClamp lines={2} tw="text-base mb-1">
             {post.excerpt}
           </LineClamp>
 

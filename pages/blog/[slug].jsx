@@ -15,12 +15,12 @@ function BlogPost({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <div tw="max-w-2xl px-8 mx-auto" preview={preview}>
+    <div tw="max-w-3xl px-8 mx-auto" preview={preview}>
       {router.isFallback ? (
         <div tw="text-blue-700 text-sm">Loading...</div>
       ) : (
         <>
-          <article>
+          <article tw="prose prose-purple prose-sm sm:prose lg:prose-lg xl:prose-xl">
             <PostView markdown={post.content} post={post} />
           </article>
         </>

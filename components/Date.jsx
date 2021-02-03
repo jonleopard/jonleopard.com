@@ -5,7 +5,7 @@ import 'twin.macro';
 function FormatDate({ text, dateString }) {
   return (
     <>
-      <div tw="text-xs font-medium text-gray-700">
+      <div tw="text-sm font-medium text-gray-500">
         {text}
         <time dateTime={dateString}>
           {format(new Date(dateString), 'MMMM co, yyyy')}
@@ -18,7 +18,7 @@ function FormatDate({ text, dateString }) {
 function DateDistance({ text, dateString }) {
   return (
     <>
-      <div tw="text-xs font-medium text-gray-700">
+      <div tw="text-sm font-medium text-gray-500">
         <span>{text}</span>
         <time dateTime={dateString}>
           {formatDistanceToNow(new Date(dateString), {

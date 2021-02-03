@@ -14,14 +14,21 @@ function PostView({ markdown, post }) {
       <SEO post={post} />
       <GlobalPrismStyles />
       <div tw="mb-10">
-        <div tw="text-2xl font-bold">{post.title}</div>
-        <div tw="flex">
-          <FormatDate text="Published on " dateString={post.date} />
-          <div tw="mr-1" />
-          <DateDistance
-            text=" and was updated "
-            dateString={post.updatedAt}
+        <div tw="text-3xl font-extrabold mb-1">{post.title}</div>
+        <div tw="flex flex-col md:flex-row">
+          <FormatDate
+            tw="flex-none"
+            text="Published on "
+            dateString={post.date}
           />
+          <div tw="mr-1" />
+          {post.updatedAt ? (
+            <DateDistance
+              tw="flex-none"
+              text=" and was updated "
+              dateString={post.updatedAt}
+            />
+          ) : null}
         </div>
       </div>
       <ReactMarkdown

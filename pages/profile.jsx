@@ -28,7 +28,7 @@ function PreviewCard({ src, alt, text }) {
 
 function Profile() {
   return (
-    <div tw="max-w-2xl mx-auto px-8">
+    <div tw="max-w-3xl mx-auto px-8">
       <div tw="grid grid-cols-1 gap-10">
         <div>
           <h1 tw="block text-5xl font-bold leading-none mb-10">
@@ -44,7 +44,7 @@ function Profile() {
           </p>
           <div>
             <a
-              tw="mt-8 text-blue-600 visited:text-purple-600"
+              tw="mt-8 text-blue-600"
               href="https://twitter.com/jonlprd"
             >
               @jonlprd
@@ -63,7 +63,7 @@ function Profile() {
                 tw="mr-2"
               />
               <a
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 href="https://github.com/jonleopard/lunarphase"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -81,7 +81,7 @@ function Profile() {
                 tw="mr-2"
               />
               <a
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 href="https://github.com/jonleopard/dotfiles"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -99,7 +99,7 @@ function Profile() {
                 tw="mr-2"
               />
               <a
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 href="https://github.com/jonleopard/dotfile-starter"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -121,7 +121,7 @@ function Profile() {
               />
               <a
                 href="https://github.com/jonleopard/til"
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -142,7 +142,7 @@ function Profile() {
               />
               <a
                 href="https://github.com/jonleopard/base16-papercolor-scheme"
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -162,7 +162,7 @@ function Profile() {
               Computers have been a part of my life since I was a{' '}
               <PreviewCard
                 text="youngling"
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 src="/img/computer-nerd.jpeg"
                 alt="pooter nerd"
               />
@@ -172,7 +172,7 @@ function Profile() {
               I'm a huge gamer! My first experiences were{' '}
               <a
                 href="https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)"
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -181,7 +181,7 @@ function Profile() {
               and{' '}
               <a
                 href="https://en.wikipedia.org/wiki/Lemmings_(video_game)"
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -190,7 +190,7 @@ function Profile() {
               . Bungie's{' '}
               <a
                 href="https://en.wikipedia.org/wiki/Marathon_Trilogy"
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -200,7 +200,7 @@ function Profile() {
               streaming on{' '}
               <a
                 href="https://www.twitch.tv/tronbo"
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -220,7 +220,7 @@ function Profile() {
               2003 out of an an{' '}
               <a
                 href="https://en.wikipedia.org/wiki/EMachines"
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -259,7 +259,7 @@ function Profile() {
             <p>
               I'm a{' '}
               <a
-                tw="text-blue-600 visited:text-purple-600"
+                tw="text-blue-600"
                 target="blank"
                 rel="noopener noreferrer"
                 href="https://trakt.tv/users/lprd"

@@ -56,7 +56,7 @@ function Navbar() {
   }
 
   return (
-    <div tw="max-w-2xl px-4 mx-auto">
+    <div tw="max-w-3xl px-4 mx-auto">
       <nav tw="flex items-baseline flex-shrink-0 py-4">
         <NavLinks activeRoute={activeRoute} />
       </nav>

@@ -18,7 +18,7 @@ function Footer() {
   const WHAT_YEAR_IS_IT = new Date().getFullYear();
   return (
     <footer>
-      <div tw="w-full flex-col max-w-2xl pt-10 pb-6 px-8 mx-auto flex text-xs font-bold uppercase text-gray-600  items-center">
+      <div tw="w-full flex-col max-w-3xl pt-10 pb-6 mx-auto flex text-xs font-bold uppercase text-gray-600  items-center">
         <div tw="flex justify-between w-1/2">
           <a
             href="https://github.com/jonleopard"
