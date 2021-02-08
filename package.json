@@ -30,7 +30,7 @@
     "react-markdown": "^5.0.3",
     "styled-components": "^5.2.1",
     "tailwindcss": "^2.0.2",
-    "twin.macro": "^2.2.0"
+    "twin.macro": "^2.2.2"
   },
   "devDependencies": {
     "babel-plugin-macros": "^3.0.1",
