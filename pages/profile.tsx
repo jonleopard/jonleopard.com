@@ -1,5 +1,5 @@
 import * as React from 'react';
-import tw, { styled } from 'twin.macro';
+import tw from 'twin.macro';
 import Emoji from 'a11y-react-emoji';
 import { getLayout } from '../components/SiteLayout';
 
@@ -235,6 +235,7 @@ function Profile() {
               <PreviewCard
                 text="hold a pair of sticks"
                 src="/img/drums.jpeg"
+                alt="me holding a pair of sticks"
               />{' '}
               and picked up the guitar when I was 9.
             </p>

@@ -4,9 +4,13 @@ import styled from 'styled-components';
 import 'twin.macro';
 import { FormatDate } from '../../Date';
 
+interface LineClamp {
+  lines: number;
+}
+
 // Might extract these two later
 const LineClamp = styled.span`
-  -webkit-line-clamp: ${(props) => props.lines || 1};
+  -webkit-line-clamp: ${(props: LineClamp) => props.lines || 1};
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;

@@ -10,10 +10,16 @@ import { faKey } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import 'twin.macro';
 
+interface Line {
+  height: string;
+  color: string;
+}
+
 const Line = styled.hr`
-  border-top: ${(props) => props.height} solid
-    ${(props) => props.color};
+  border-top: ${(props: Line) => props.height} solid
+    ${(props: Line) => props.color};
 `;
+
 function Footer() {
   const WHAT_YEAR_IS_IT = new Date().getFullYear();
   return (
