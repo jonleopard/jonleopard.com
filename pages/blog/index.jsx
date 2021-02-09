@@ -1,6 +1,7 @@
 import * as React from 'react';
 import 'twin.macro';
 import { getAllPostsForBlogList } from '../../lib/api';
+import generateRssFeed from '../../lib/rss';
 import BlogList from '../../components/Blog/List';
 import { getLayout } from '../../components/SiteLayout';
 
@@ -20,6 +21,8 @@ BlogIndex.getLayout = getLayout;
 export default BlogIndex;
 
 export async function getStaticProps({ preview = false }) {
+  await generateRssFeed();
+
   const posts = await getAllPostsForBlogList(preview);
   return {
     props: { posts, preview },
