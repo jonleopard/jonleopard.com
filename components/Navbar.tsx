@@ -3,10 +3,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import tw, { styled } from 'twin.macro';
 
+interface StyledLink {
+  isActive: boolean;
+}
+
 const StyledLink = styled.span`
   a {
     ${tw`inline-block px-4 py-2 font-medium leading-tight text-black rounded-lg hover:bg-gray-100`};
-    background: ${(props) =>
+    background: ${(props: StyledLink) =>
       props.isActive ? tw`bg-gray-100 rounded-lg` : 'none'};
   }
 
