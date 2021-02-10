@@ -14,8 +14,6 @@
   "env": {
     "node": true,
     "browser": true,
-    "jasmine": true,
-    "jest": true,
     "es6": true
   },
   "rules": {
@@ -25,6 +23,7 @@
         "singleQuote": true
       }
     ],
+    "react/no-unescaped-entities": 0,
     "react/prop-types": "off",
     "react/display-name": "off",
     "react/react-in-jsx-scope": "off",
