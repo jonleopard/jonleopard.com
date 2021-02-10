@@ -26,16 +26,10 @@ function Footer() {
     <footer>
       <div tw="w-full flex-col max-w-3xl pt-10 pb-6 mx-auto flex text-xs font-bold uppercase text-gray-600  items-center">
         <div tw="flex justify-between w-1/2">
-          <a
-            href="https://github.com/jonleopard"
-            tw="hover:text-purple-600"
-          >
+          <a href="https://github.com/jonleopard" tw="hover:text-purple-600">
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
-          <a
-            href="https://twitter.com/jonlprd"
-            tw="hover:text-purple-600"
-          >
+          <a href="https://twitter.com/jonlprd" tw="hover:text-purple-600">
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
           <a

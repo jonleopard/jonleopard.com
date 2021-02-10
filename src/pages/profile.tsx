@@ -31,22 +31,16 @@ function Profile() {
     <div tw="max-w-3xl mx-auto px-4">
       <div tw="grid grid-cols-1 gap-10">
         <div>
-          <h1 tw="block text-5xl font-bold leading-none mb-10">
-            Profile
-          </h1>
+          <h1 tw="block text-5xl font-bold leading-none mb-10">Profile</h1>
           <p>
-            I'm a web developer with a background in design. This
-            website serves as a medium to get me more involved in the
-            industry, discuss the projects I'm working on, and other
-            random musings. I've been a US expat since 2012 and
-            currently reside in France. If you ever find yourself in
-            the Paris region, let's grab a beer!
+            I'm a web developer with a background in design. This website serves
+            as a medium to get me more involved in the industry, discuss the
+            projects I'm working on, and other random musings. I've been a US
+            expat since 2012 and currently reside in France. If you ever find
+            yourself in the Paris region, let's grab a beer!
           </p>
           <div>
-            <a
-              tw="mt-8 text-blue-600"
-              href="https://twitter.com/jonlprd"
-            >
+            <a tw="mt-8 text-blue-600" href="https://twitter.com/jonlprd">
               @jonlprd
             </a>
           </div>
@@ -56,12 +50,7 @@ function Profile() {
           <h1 tw="text-2xl text-gray-900 font-semibold">Projects</h1>
           <div tw="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
             <div>
-              <Emoji
-                symbol="🌙"
-                role="img"
-                aria-label="Moon"
-                tw="mr-2"
-              />
+              <Emoji symbol="🌙" role="img" aria-label="Moon" tw="mr-2" />
               <a
                 tw="text-blue-600"
                 href="https://github.com/jonleopard/lunarphase"
@@ -74,12 +63,7 @@ function Profile() {
             </div>
 
             <div>
-              <Emoji
-                symbol="🏠 "
-                role="img"
-                aria-label="House"
-                tw="mr-2"
-              />
+              <Emoji symbol="🏠 " role="img" aria-label="House" tw="mr-2" />
               <a
                 tw="text-blue-600"
                 href="https://github.com/jonleopard/dotfiles"
@@ -92,12 +76,7 @@ function Profile() {
             </div>
 
             <div>
-              <Emoji
-                symbol="🎓"
-                role="img"
-                aria-label="Hat"
-                tw="mr-2"
-              />
+              <Emoji symbol="🎓" role="img" aria-label="Hat" tw="mr-2" />
               <a
                 tw="text-blue-600"
                 href="https://github.com/jonleopard/dotfile-starter"
@@ -107,18 +86,12 @@ function Profile() {
                 dotfile starter
               </a>
               <p>
-                A practice/starter guide on how to make your own
-                dotfile repo.
+                A practice/starter guide on how to make your own dotfile repo.
               </p>
             </div>
 
             <div>
-              <Emoji
-                symbol="✍️"
-                role="img"
-                aria-label="Writing"
-                tw="mr-2"
-              />
+              <Emoji symbol="✍️" role="img" aria-label="Writing" tw="mr-2" />
               <a
                 href="https://github.com/jonleopard/til"
                 tw="text-blue-600"
@@ -128,8 +101,8 @@ function Profile() {
                 til (today i learned)
               </a>
               <p>
-                A collection of useful tips and things I've learned on
-                a daily basis.
+                A collection of useful tips and things I've learned on a daily
+                basis.
               </p>
             </div>
 
@@ -154,9 +127,7 @@ function Profile() {
         </div>
 
         <div>
-          <h1 tw="text-2xl text-gray-900 font-semibold">
-            Random bits
-          </h1>
+          <h1 tw="text-2xl text-gray-900 font-semibold">Random bits</h1>
           <div tw="grid grid-cols-1 gap-4">
             <p>
               Computers have been a part of my life since I was a{' '}
@@ -196,8 +167,7 @@ function Profile() {
               >
                 Marathon
               </a>{' '}
-              was my favorite FPS. You can find me occasionally
-              streaming on{' '}
+              was my favorite FPS. You can find me occasionally streaming on{' '}
               <a
                 href="https://www.twitch.tv/tronbo"
                 tw="text-blue-600"
@@ -215,9 +185,8 @@ function Profile() {
               </a>
             </p>
             <p>
-              My first laptop was a tangerine iBook G3 that took me
-              forever to save up for. I built my first custom PC in
-              2003 out of an an{' '}
+              My first laptop was a tangerine iBook G3 that took me forever to
+              save up for. I built my first custom PC in 2003 out of an an{' '}
               <a
                 href="https://en.wikipedia.org/wiki/EMachines"
                 tw="text-blue-600"
@@ -230,8 +199,7 @@ function Profile() {
             </p>
 
             <p>
-              Music is one of my hobbies. I've been drumming since I
-              could{' '}
+              Music is one of my hobbies. I've been drumming since I could{' '}
               <PreviewCard
                 text="hold a pair of sticks"
                 src="/img/drums.jpeg"
@@ -241,8 +209,8 @@ function Profile() {
             </p>
 
             <p>
-              I discovered the world of coffee at a young age when my
-              Dad started his own{' '}
+              I discovered the world of coffee at a young age when my Dad
+              started his own{' '}
               <PreviewCard
                 text="roasting company"
                 src="/img/joe-coffee-online.png"
@@ -254,8 +222,8 @@ function Profile() {
                 src="/img/colorado-bean.png"
                 alt="Image of coffee shop"
               />{' '}
-              in 2001 where I learned how to pull a good shot, and
-              brew a perfect cup of joe.
+              in 2001 where I learned how to pull a good shot, and brew a
+              perfect cup of joe.
             </p>
             <p>
               I'm a{' '}
@@ -270,10 +238,10 @@ function Profile() {
               .
             </p>
             <p>
-              I moved from America to Cabo San Lucas with my family in
-              the Spring of 2012. We where there for 9 months and then
-              moved to France afterwards. I've been living in the
-              Paris region ever since.
+              I moved from America to Cabo San Lucas with my family in the
+              Spring of 2012. We where there for 9 months and then moved to
+              France afterwards. I've been living in the Paris region ever
+              since.
             </p>
           </div>
         </div>

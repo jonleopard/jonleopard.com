@@ -37,15 +37,8 @@ export default function SEO() {
       <DefaultSeo {...SeoConfig} />
       <Head>
         <meta name="theme-color" content="#fefefe" />
-        <link
-          rel="apple-touch-icon"
-          href="/meta/apple-touch-icon.png"
-        />
-        <link
-          rel="mask-icon"
-          href="/meta/mask-icon.svg"
-          color="#050505"
-        />
+        <link rel="apple-touch-icon" href="/meta/apple-touch-icon.png" />
+        <link rel="mask-icon" href="/meta/mask-icon.svg" color="#050505" />
         <link rel="manifest" href="/meta/manifest.json" />
         <link
           rel="icon"

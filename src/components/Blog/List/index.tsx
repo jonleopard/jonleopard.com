@@ -22,11 +22,7 @@ function BlogList({ posts }) {
     <div tw="grid grid-cols-1 gap-8">
       {posts.map((post) => (
         <div key={post.id}>
-          <Link
-            href="/blog/[slug]"
-            as={`/blog/${post.slug}`}
-            passHref
-          >
+          <Link href="/blog/[slug]" as={`/blog/${post.slug}`} passHref>
             <a tw="text-base mb-2 text-blue-600">{post.title}</a>
           </Link>
 

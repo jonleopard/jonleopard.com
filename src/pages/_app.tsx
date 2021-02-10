@@ -1,5 +1,4 @@
-import * as React from 'react';
-import SiteLayout from '../components/SiteLayout';
+import { Fragment } from 'react';
 import Providers from '../components/Providers';
 import { AppProps } from 'next/app';
 import type { Page } from '../types/page';
@@ -9,13 +8,17 @@ type Props = AppProps & {
 };
 
 function MyApp({ Component, pageProps }: Props) {
-  const getLayout =
-    Component.getLayout || ((page) => <SiteLayout children={page} />);
+  const getLayout = Component.getLayout ?? ((page) => page);
+  const Layout = Component.layout ?? Fragment;
 
-  return getLayout(
+  return (
     <Providers>
-      <Component {...pageProps} />
-    </Providers>,
+      {getLayout(
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      )}
+    </Providers>
   );
 }
 

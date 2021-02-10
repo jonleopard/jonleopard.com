@@ -5,10 +5,7 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import 'twin.macro';
 import { getLayout } from '../../components/SiteLayout';
 import PostView from '../../components/Blog/Post';
-import {
-  getAllPostsWithSlug,
-  getPostAndMorePosts,
-} from '../../lib/api';
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 
 function BlogPost({ post }) {
   const router = useRouter();

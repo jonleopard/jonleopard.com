@@ -16,7 +16,7 @@ const theme = {
   },
 };
 
-export default ({ children }) => {
+const Provider = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <SEO />
@@ -24,3 +24,4 @@ export default ({ children }) => {
     </ThemeProvider>
   );
 };
+export default Provider;
