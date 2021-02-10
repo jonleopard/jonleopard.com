@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { GetStaticProps } from 'next';
 import 'twin.macro';
-import { getAllPostsForBlogList } from '../../lib/api';
-import generateRssFeed from '../../lib/rss';
-import generateSitemap from '../../lib/sitemap';
-import BlogList from '../../components/Blog/List';
-import { getLayout } from '../../components/SiteLayout';
+import { getAllPostsForBlogList } from '../lib/api';
+import generateRssFeed from '../lib/rss';
+import generateSitemap from '../lib/sitemap';
+import BlogList from '../components/Blog/List';
+import { getLayout } from '../components/SiteLayout';
 
 function BlogIndex({ posts }) {
   return (
