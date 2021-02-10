@@ -5,15 +5,15 @@ import { Readable } from 'stream';
 import { getEntries } from './api';
 
 async function generateSitemap() {
-  // if (process.env.NODE_ENV === 'development') {
-  //   return;
-  // }
+  if (process.env.NODE_ENV === 'development') {
+    return;
+  }
 
   const baseUrl = process.env.BASE_URL;
   const pages = await globby([
     'src/pages/**/*{.tsx}',
     '!src/pages/**/[*',
-    '!src/pages/_*.js',
+    '!src/pages/_*.tsx',
     '!src/pages/api',
   ]);
 
