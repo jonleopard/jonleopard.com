@@ -7,6 +7,10 @@ interface StyledLink {
   isActive: boolean;
 }
 
+interface Props {
+  activeRoute: string;
+}
+
 const StyledLink = styled.span`
   a {
     ${tw`inline-block px-4 py-2 font-medium leading-tight text-black rounded-lg hover:bg-gray-100`};
@@ -19,7 +23,7 @@ const StyledLink = styled.span`
   }
 `;
 
-function NavLinks({ activeRoute }) {
+function NavLinks({ activeRoute }: Props) {
   return (
     <>
       <StyledLink isActive={activeRoute === 'Jon Leopard'}>
@@ -50,6 +54,10 @@ function Navbar() {
 
   let activeRoute = '';
   let activePath = '';
+  if (router.pathname === '/') {
+    activeRoute = 'Home';
+    activePath = '/';
+  }
   if (router.pathname.startsWith('/profile')) {
     activeRoute = 'Profile';
     activePath = '/profile';
@@ -61,9 +69,11 @@ function Navbar() {
 
   return (
     <div tw="max-w-3xl px-2 mx-auto">
-      <nav tw="flex items-baseline flex-shrink-0 py-4">
-        <NavLinks activeRoute={activeRoute} />
-      </nav>
+      <Link href={activePath}>
+        <nav tw="flex items-baseline flex-shrink-0 py-4">
+          <NavLinks activeRoute={activeRoute} />
+        </nav>
+      </Link>
     </div>
   );
 }
