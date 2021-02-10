@@ -2,7 +2,12 @@ import * as React from 'react';
 import { format, formatDistanceToNow } from 'date-fns';
 import 'twin.macro';
 
-function FormatDate({ text, dateString }) {
+type DateFormatProps = {
+  dateString: string;
+  text: string;
+};
+
+function FormatDate({ text, dateString }: DateFormatProps) {
   return (
     <>
       <div tw="text-sm font-medium text-gray-500">
@@ -15,7 +20,7 @@ function FormatDate({ text, dateString }) {
   );
 }
 
-function DateDistance({ text, dateString }) {
+function DateDistance({ text, dateString }: DateFormatProps) {
   return (
     <>
       <div tw="text-sm font-medium text-gray-500">
