@@ -2,6 +2,7 @@ import * as React from 'react';
 import 'twin.macro';
 import { getAllPostsForBlogList } from '../../lib/api';
 import generateRssFeed from '../../lib/rss';
+import generateSitemap from '../../lib/sitemap';
 import BlogList from '../../components/Blog/List';
 import { getLayout } from '../../components/SiteLayout';
 
@@ -22,6 +23,7 @@ export default BlogIndex;
 
 export async function getStaticProps({ preview = false }) {
   await generateRssFeed();
+  await generateSitemap();
 
   const posts = await getAllPostsForBlogList(preview);
   return {

@@ -49,6 +49,14 @@ export async function rssFeedEntries() {
   return parsePostEntries(entries);
 }
 
+export async function getEntries() {
+  const entries = await client.getEntries({
+    content_type: 'post',
+    order: '-fields.date',
+  });
+  return parsePostEntries(entries);
+}
+
 export async function getAllPostsWithSlug() {
   const entries = await client.getEntries({
     content_type: 'post',
