@@ -1,6 +1,7 @@
 import * as React from 'react';
 import ErrorPage from 'next/error';
 import { useRouter } from 'next/router';
+import { GetStaticProps, GetStaticPaths } from 'next';
 import 'twin.macro';
 import { getLayout } from '../../components/SiteLayout';
 import PostView from '../../components/Blog/Post';
@@ -9,13 +10,13 @@ import {
   getPostAndMorePosts,
 } from '../../lib/api';
 
-function BlogPost({ post, morePosts, preview }) {
+function BlogPost({ post }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <div tw="max-w-3xl px-4 mx-auto" preview={preview}>
+    <div tw="max-w-3xl px-4 mx-auto">
       {router.isFallback ? (
         <div tw="text-blue-700 text-sm">Loading...</div>
       ) : (
@@ -33,19 +34,18 @@ export default BlogPost;
 
 BlogPost.getLayout = getLayout;
 
-export async function getStaticProps({ params, preview = false }) {
-  const data = await getPostAndMorePosts(params.slug, preview);
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const data = await getPostAndMorePosts(params.slug);
 
   return {
     props: {
-      preview,
       post: data?.post ?? null,
       morePosts: data?.morePosts ?? null,
     },
   };
-}
+};
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = await getAllPostsWithSlug();
   return {
     paths: allPosts?.map(({ slug }) => `/blog/${slug}`) ?? [],
@@ -53,4 +53,4 @@ export async function getStaticPaths() {
     // causes an error.
     fallback: false,
   };
-}
+};
