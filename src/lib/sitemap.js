@@ -4,19 +4,23 @@ import { SitemapStream, streamToPromise } from 'sitemap';
 import { Readable } from 'stream';
 import { getEntries } from './api';
 
+const blocklist = ['/newsletter-success', '/404'];
+
 async function generateSitemap() {
   if (process.env.NODE_ENV === 'development') {
     return;
   }
 
   const baseUrl = process.env.BASE_URL;
+
   const pages = await globby([
-    'src/pages/**/*{.tsx}',
+    'src/pages/**/*{.tsx,jsx}',
     '!src/pages/**/[*',
     '!src/pages/_*.tsx',
     '!src/pages/api',
   ]);
 
+  // normal page routes
   const pageLinks = pages
     .map((page) => {
       const path = page
@@ -32,7 +36,7 @@ async function generateSitemap() {
   // post routes
   const posts = await getEntries();
   const postLinks = posts.map((post) => ({
-    url: `/${post.slug}`,
+    url: `/blog/${post.slug}`,
     chagefreq: 'daily',
     priority: 0.7,
   }));
