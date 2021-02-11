@@ -8,12 +8,12 @@
     }
   },
   "scripts": {
-    "postinstall": "husky install",
     "lint": "eslint ./src/pages/* ./src/components/* ./src/lib/* -c .eslintrc.json --fix --ext ts,tsx",
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "husky install"
   },
   "husky": {
     "hooks": {
