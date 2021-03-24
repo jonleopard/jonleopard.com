@@ -24,7 +24,7 @@ function Index() {
             Gaming, photography, outdoors <br />
           </p>
           <p tw="mb-2">
-            <Emoji tw="mr-2" symbol="🇺🇸" belal="American Flag" />→{' '}
+            <Emoji tw="mr-2" symbol="🇺🇸" label="American Flag" />→{' '}
             <Emoji tw="mr-2" symbol="🇫🇷" label="France Flag" />
             U.S Expat living in Paris <br />
           </p>
