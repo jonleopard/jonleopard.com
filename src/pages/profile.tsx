@@ -1,27 +1,40 @@
-import * as React from 'react';
-import tw from 'twin.macro';
+import 'twin.macro';
+import React, { useState } from 'react';
+import { usePopper } from 'react-popper';
 import Emoji from 'a11y-react-emoji';
 import { getLayout } from '../components/SiteLayout';
 
-const StyledImage = tw.img`max-w-xs rounded overflow-hidden shadow-lg absolute z-50 left-0`;
-
-// TODO: This should be better...
-function PreviewCard({ src, alt, text }) {
+function PreviewCard({ src, text }) {
   const [isShown, setIsShown] = React.useState(false);
+  const [referenceElement, setReferenceElement] = useState(null);
+  const [popperElement, setPopperElement] = useState(null);
+  const [arrowElement, setArrowElement] = useState(null);
+  const { styles, attributes } = usePopper(referenceElement, popperElement, {
+    modifiers: [{ name: 'arrow', options: { element: arrowElement } }],
+  });
 
   return (
     <>
       <a
-        href={src}
-        tw="relative text-blue-600 visited:text-purple-600"
+        tw="text-blue-600 cursor-pointer visited:text-purple-600"
         onMouseEnter={() => {
           setIsShown(true);
         }}
         onMouseLeave={() => setIsShown(false)}
+        ref={setReferenceElement}
       >
         {text}
-        {isShown && <StyledImage src={src} alt={alt} />}
       </a>
+      {isShown && (
+        <div
+          ref={setPopperElement}
+          style={styles.popper}
+          {...attributes.popper}
+        >
+          <img src={src} tw="rounded max-w-xs z-10" />
+          <div ref={setArrowElement} style={styles.arrow} />
+        </div>
+      )}
     </>
   );
 }
@@ -34,7 +47,7 @@ function Profile() {
           <h1 tw="block text-5xl font-bold leading-none mb-10">Profile</h1>
           <p>
             I'm a web developer with a background in design. This website serves
-            as a medium to get me more involved in the industry, discuss the
+            as a medium to get me more involved in the field, discuss the
             projects I'm working on, and other random musings. I've been a US
             expat since 2012 and currently reside in France. If you ever find
             yourself in the Paris region, let's grab a beer!
@@ -45,7 +58,6 @@ function Profile() {
             </a>
           </div>
         </div>
-
         <div>
           <h1 tw="text-2xl text-gray-900 font-semibold">Projects</h1>
           <div tw="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
@@ -131,13 +143,7 @@ function Profile() {
           <div tw="grid grid-cols-1 gap-4">
             <p>
               Computers have been a part of my life since I was a{' '}
-              <PreviewCard
-                text="youngling"
-                tw="text-blue-600"
-                src="/img/computer-nerd.jpeg"
-                alt="pooter nerd"
-              />
-              .
+              <PreviewCard text="youngling" src="/img/computer-nerd.jpeg" />.
             </p>
             <p>
               I'm a huge gamer! My first experiences were{' '}
@@ -200,11 +206,7 @@ function Profile() {
 
             <p>
               Music is one of my hobbies. I've been drumming since I could{' '}
-              <PreviewCard
-                text="hold a pair of sticks"
-                src="/img/drums.jpeg"
-                alt="me holding a pair of sticks"
-              />{' '}
+              <PreviewCard text="hold a pair of sticks" src="/img/drums.jpeg" />{' '}
               and picked up the guitar when I was 9.
             </p>
 
@@ -214,16 +216,11 @@ function Profile() {
               <PreviewCard
                 text="roasting company"
                 src="/img/joe-coffee-online.png"
-                alt="image of old website"
               />{' '}
               in 1999. He later opened up a{' '}
-              <PreviewCard
-                text="storefront"
-                src="/img/colorado-bean.png"
-                alt="Image of coffee shop"
-              />{' '}
-              in 2001 where I learned how to pull a good shot, and brew a
-              perfect cup of joe.
+              <PreviewCard text="storefront" src="/img/colorado-bean.png" /> in
+              2001 where I learned how to pull a good shot, and brew a perfect
+              cup of joe.
             </p>
             <p>
               I'm a{' '}
