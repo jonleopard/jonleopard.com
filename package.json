@@ -47,7 +47,7 @@
     "react-markdown": "^5.0.3",
     "react-popper": "^2.2.5",
     "styled-components": "^5.2.3",
-    "tailwindcss": "^2.0.4",
+    "tailwindcss": "^2.1.1",
     "twin.macro": "^2.3.2"
   },
   "devDependencies": {
