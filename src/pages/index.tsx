@@ -28,6 +28,10 @@ function Index() {
             <Emoji tw="mr-2" symbol="🇫🇷" label="France Flag" />
             U.S Expat living in Paris <br />
           </p>
+
+
+
+
         </div>
       </div>
     </>
