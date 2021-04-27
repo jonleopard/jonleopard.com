@@ -48,7 +48,7 @@
     "react-popper": "^2.2.5",
     "styled-components": "^5.2.3",
     "tailwindcss": "^2.1.1",
-    "twin.macro": "^2.3.3"
+    "twin.macro": "^2.4.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.41",
