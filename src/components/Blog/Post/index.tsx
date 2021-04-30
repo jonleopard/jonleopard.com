@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import 'twin.macro';
 import SEO from './SEO';
@@ -6,7 +6,20 @@ import SyntaxHighlighter from '../../SyntaxHighlighter';
 import GlobalPrismStyles from '../../GlobalStyles/prism';
 import { FormatDate, DateDistance } from '../../Date';
 
-function PostView({ markdown, post }) {
+type PostProps = {
+  markdown: string;
+  post: {
+    title: string;
+    date: string;
+    updatedAt: string;
+  };
+};
+
+function PostView({
+  markdown,
+  post,
+  post: { title, date, updatedAt },
+}: PostProps) {
   return (
     <>
       <SyntaxHighlighter data={post} />
@@ -14,26 +27,22 @@ function PostView({ markdown, post }) {
       <GlobalPrismStyles />
       <div tw="mb-10">
         {/* <img src={post.coverImage.fields.file.url} /> */}
-        <div tw="text-3xl font-extrabold mb-1">{post.title}</div>
+        <div tw="text-3xl font-extrabold mb-1">{title}</div>
         <div tw="flex flex-col md:flex-row">
-          <FormatDate
-            tw="flex-none"
-            text="Published on "
-            dateString={post.date}
-          />
+          <FormatDate tw="flex-none" text="Published on " dateString={date} />
           <div tw="mr-1" />
-          {post.updatedAt ? (
+          {updatedAt ? (
             <DateDistance
               tw="flex-none"
               text=" and was updated "
-              dateString={post.updatedAt}
+              dateString={updatedAt}
             />
           ) : null}
         </div>
       </div>
       <ReactMarkdown
         tw="w-full prose prose-sm sm:prose lg:prose-lg xl:prose-xl"
-        source={markdown}
+        children={markdown}
       />
     </>
   );
