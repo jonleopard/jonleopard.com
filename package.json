@@ -54,7 +54,7 @@
     "@types/node": "^15.6.1",
     "@types/prismjs": "^1.16.5",
     "@types/react": "^17.0.8",
-    "@types/styled-components": "^5.1.9",
+    "@types/styled-components": "^5.1.10",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
     "babel-eslint": "^10.1.0",
