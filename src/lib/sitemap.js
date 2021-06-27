@@ -44,9 +44,9 @@ async function generateSitemap() {
   const links = [...pageLinks, ...postLinks];
   const stream = new SitemapStream({ hostname: baseUrl });
 
-  const xml = await streamToPromise(
-    Readable.from(links).pipe(stream)
-  ).then((data) => data.toString());
+  const xml = await streamToPromise(Readable.from(links).pipe(stream)).then(
+    (data) => data.toString()
+  );
 
   fs.writeFileSync('./public/sitemap.xml', xml);
 }

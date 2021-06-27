@@ -40,10 +40,9 @@ function PostView({
           ) : null}
         </div>
       </div>
-      <ReactMarkdown
-        tw="w-full prose prose-sm sm:prose lg:prose-lg xl:prose-xl"
-        children={markdown}
-      />
+      <ReactMarkdown tw="w-full prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+        {markdown}
+      </ReactMarkdown>
     </>
   );
 }
