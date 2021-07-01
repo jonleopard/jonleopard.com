@@ -29,7 +29,8 @@ export default function SEO() {
   const router = useRouter();
 
   let emoji = '🥞';
-  if (router.route.indexOf('/profile') === 0) emoji = '👽';
+  if (router.route.indexOf('/about') === 0) emoji = '🧑🏼‍💻';
+  if (router.route.indexOf('/projects') === 0) emoji = '🛠';
   if (router.route.indexOf('/blog') === 0) emoji = '📚';
 
   return (
