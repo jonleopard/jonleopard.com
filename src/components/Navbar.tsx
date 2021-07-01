@@ -34,13 +34,13 @@ function NavLinks({ activeRoute }: Props) {
 
       <div tw="mx-auto" />
 
-      <StyledLink isActive={activeRoute === 'Profile'}>
+      <StyledLink tw="ml-2" isActive={activeRoute === 'Profile'}>
         <Link href="/profile">
           <a>Profile</a>
         </Link>
       </StyledLink>
 
-      <StyledLink isActive={activeRoute === 'Blog'}>
+      <StyledLink tw="ml-2" isActive={activeRoute === 'Blog'}>
         <Link href="/blog">
           <a>Blog</a>
         </Link>
