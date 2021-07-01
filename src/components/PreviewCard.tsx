@@ -6,9 +6,8 @@ function PreviewCard({ src, text }) {
   const [isShown, setIsShown] = React.useState(false);
   const [referenceElement, setReferenceElement] = useState(null);
   const [popperElement, setPopperElement] = useState(null);
-  const [arrowElement, setArrowElement] = useState(null);
   const { styles, attributes } = usePopper(referenceElement, popperElement, {
-    modifiers: [{ name: 'arrow', options: { element: arrowElement } }],
+    modifiers: [{ name: 'arrow' }],
   });
 
   return (
@@ -24,14 +23,13 @@ function PreviewCard({ src, text }) {
         {text}
       </a>
       {isShown && (
-        <div
+        <img
+          src={src}
           ref={setPopperElement}
           style={styles.popper}
           {...attributes.popper}
-        >
-          <img src={src} tw="rounded max-w-xs z-10" />
-          <div ref={setArrowElement} style={styles.arrow} />
-        </div>
+          tw="rounded mx-4 w-1/3 sm:w-auto z-10"
+        />
       )}
     </>
   );
