@@ -34,9 +34,15 @@ function NavLinks({ activeRoute }: Props) {
 
       <div tw="mx-auto" />
 
-      <StyledLink tw="ml-2" isActive={activeRoute === 'Profile'}>
-        <Link href="/profile">
-          <a>Profile</a>
+      <StyledLink tw="ml-2" isActive={activeRoute === 'About'}>
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+      </StyledLink>
+
+      <StyledLink tw="ml-2" isActive={activeRoute === 'Projects'}>
+        <Link href="/projects">
+          <a>Projects</a>
         </Link>
       </StyledLink>
 
@@ -58,9 +64,15 @@ function Navbar() {
     activeRoute = 'Home';
     activePath = '/';
   }
-  if (router.pathname.startsWith('/profile')) {
-    activeRoute = 'Profile';
-    activePath = '/profile';
+
+  if (router.pathname.startsWith('/about')) {
+    activeRoute = 'About';
+    activePath = '/about';
+  }
+
+  if (router.pathname.startsWith('/projects')) {
+    activeRoute = 'Projects';
+    activePath = '/projects';
   }
   if (router.pathname.includes('/blog')) {
     activeRoute = 'Blog';
