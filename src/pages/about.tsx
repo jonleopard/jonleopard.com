@@ -76,9 +76,9 @@ function RandomBits() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Twitch
-            <Emoji symbol="👾" role="img" aria-label="Atari Emoji" tw="mr-2" />.
+            Twitch <Emoji symbol="👾" role="img" aria-label="Atari Emoji" />
           </a>
+          .
         </p>
         <p>
           My first laptop was a tangerine iBook G3 that took me forever to save
