@@ -2,6 +2,7 @@ import * as React from 'react';
 // import GlobalStyles from '../GlobalStyles';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from 'twin.macro';
+import PlausibleProvider from 'next-plausible';
 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -20,6 +21,7 @@ const theme = {
 const Provider = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
+      <PlausibleProvider domain="jonleopard.com" />
       <SEO />
       <GlobalStyles />
       {children}
