@@ -21,10 +21,11 @@ const theme = {
 const Provider = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <PlausibleProvider domain="jonleopard.com" />
-      <SEO />
-      <GlobalStyles />
-      {children}
+      <PlausibleProvider domain="jonleopard.com">
+        <SEO />
+        <GlobalStyles />
+        {children}
+      </PlausibleProvider>
     </ThemeProvider>
   );
 };
