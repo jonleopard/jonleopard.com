@@ -1,79 +1,49 @@
 import 'twin.macro';
-import Emoji from 'a11y-react-emoji';
 import { getLayout } from '../components/SiteLayout';
+import OSSItem from '../components/OSSItem';
 
 function OSSProjects() {
   return (
     <div>
-      <h1 tw="text-2xl text-gray-900 font-semibold">Open Source Projects</h1>
+      <h1 tw="text-2xl text-gray-900 font-semibold mb-1">
+        Open Source Projects
+      </h1>
       <div tw="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
-        <div>
-          <Emoji symbol="🌙" role="img" aria-label="Moon" tw="mr-2" />
-          <a
-            tw="text-blue-600"
-            href="https://github.com/jonleopard/lunarphase"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            moonphase.space
-          </a>
-          <p>A tiny app that displays the current moon phase.</p>
-        </div>
-
-        <div>
-          <Emoji symbol="🏠 " role="img" aria-label="House" tw="mr-2" />
-          <a
-            tw="text-blue-600"
-            href="https://github.com/jonleopard/dotfiles"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            dotfiles
-          </a>
-          <p>dotfiles for my macOS environment.</p>
-        </div>
-
-        <div>
-          <Emoji symbol="🎓" role="img" aria-label="Hat" tw="mr-2" />
-          <a
-            tw="text-blue-600"
-            href="https://github.com/jonleopard/dotfile-starter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            dotfile starter
-          </a>
-          <p>A practice/starter guide on how to make your own dotfile repo.</p>
-        </div>
-
-        <div>
-          <Emoji symbol="✍️" role="img" aria-label="Writing" tw="mr-2" />
-          <a
-            href="https://github.com/jonleopard/til"
-            tw="text-blue-600"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            til (today i learned)
-          </a>
-          <p>
-            A collection of useful tips and things I've learned on a daily
-            basis.
-          </p>
-        </div>
-
-        <div>
-          <Emoji symbol="🎨" role="img" aria-label="Artist Palette" tw="mr-2" />
-          <a
-            href="https://github.com/jonleopard/base16-papercolor-scheme"
-            tw="text-blue-600"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            base16 papercolor
-          </a>
-          <p>Papercolor scheme ported for base16</p>
-        </div>
+        <OSSItem
+          symbol="🎓"
+          label="hat"
+          href="https://github.com/jonleopard/dotfile-starter"
+          title="dotfile starter"
+          description="A practice/starter guide on how to make your own dotfile repo."
+        />
+        <OSSItem
+          symbol="🏠 "
+          label="house"
+          href="https://github.com/jonleopard/dotfiles"
+          title="dotfiles"
+          description="dotfiles for my macOS environment"
+        />
+        <OSSItem
+          symbol="✍️"
+          label="writing"
+          href="https://github.com/jonleopard/til"
+          title="til (today I learned)"
+          description="A collection of useful tips and things I've learned on a daily basis"
+        />
+        <OSSItem
+          symbol="🎨"
+          label="artist palette"
+          href="https://github.com/jonleopard/base16-papercolor-scheme"
+          title="base16 papercolor"
+          description="Papercolor scheme ported for base16"
+        />
+        <OSSItem
+          symbol="🌙"
+          label="moon"
+          href="https://github.com/jonleopard/moonphase.space"
+          title="moonphase.space"
+          description="A tiny app that displays the current moon phase."
+        />
       </div>
     </div>
   );
@@ -86,28 +56,34 @@ function WorkHistory() {
 
       <div tw="grid grid-cols-1 gap-4">
         <div>
-          <p>Creationshop • Frontend developer and Project manager</p>
+          <p tw="text-lg">
+            Creationshop • Frontend developer and Project manager
+          </p>
           <p tw="text-gray-600">March 2009 - March 2021</p>
         </div>
 
         <div>
-          <p>UpFX • Frontend developer</p>
+          <p tw="text-lg">UpFX • Frontend developer</p>
           <p tw="text-gray-600">April 2014 - November 2016</p>
         </div>
 
         <div>
-          <p>1Cart • Frontend designer, Wireframer, Project manager</p>
+          <p tw="text-lg">
+            1Cart • Frontend designer, Wireframer, Project manager
+          </p>
           <p tw="text-gray-600">Feb 2010 - September 2013</p>
         </div>
 
         <div>
-          <p>GoingUP • Frontend designer & Project manager</p>
+          <p tw="text-lg">GoingUP • Frontend designer & Project manager</p>
           <p tw="text-gray-600">May 2009 - November 2010</p>
         </div>
         <div>
           <a
-            tw="text-blue-600"
+            tw="text-blue-600 text-lg"
             href="https://www.linkedin.com/in/jonathan-leopard"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             View my linkedin profile →
           </a>
