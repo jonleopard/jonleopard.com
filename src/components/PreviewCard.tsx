@@ -2,7 +2,12 @@ import 'twin.macro';
 import React, { useState } from 'react';
 import { usePopper } from 'react-popper';
 
-function PreviewCard({ src, text }) {
+interface PreviewCardProps {
+  src: string;
+  text: string;
+}
+
+function PreviewCard({ src, text }: PreviewCardProps) {
   const [isShown, setIsShown] = React.useState(false);
   const [referenceElement, setReferenceElement] = useState(null);
   const [popperElement, setPopperElement] = useState(null);
@@ -28,7 +33,7 @@ function PreviewCard({ src, text }) {
           ref={setPopperElement}
           style={styles.popper}
           {...attributes.popper}
-          tw="rounded mx-4 w-1/3 sm:w-auto z-10"
+          tw="rounded w-44 lg:w-72 z-10"
         />
       )}
     </>
