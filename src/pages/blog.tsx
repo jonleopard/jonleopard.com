@@ -4,6 +4,7 @@ import 'twin.macro';
 import { getAllPostsForBlogList } from '../lib/api';
 import generateRssFeed from '../lib/rss';
 import generateSitemap from '../lib/sitemap';
+import SubscribeBox from '../components/SubscribeBox';
 import BlogList from '../components/Blog/List';
 import { getLayout } from '../components/SiteLayout';
 
@@ -13,6 +14,7 @@ function BlogIndex({ posts }) {
       <div tw="max-w-3xl mx-auto px-4">
         <h1 tw="block text-5xl font-bold leading-none mb-10">Blog</h1>
         <BlogList posts={posts} />
+        <SubscribeBox />
       </div>
     </>
   );

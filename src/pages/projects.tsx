@@ -85,7 +85,7 @@ function WorkHistory() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View my linkedin profile →
+            View my Linkedin profile →
           </a>
         </div>
       </div>
