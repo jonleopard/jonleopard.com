@@ -1,10 +1,11 @@
+import 'twin.macro';
 import * as React from 'react';
 import ErrorPage from 'next/error';
 import { useRouter } from 'next/router';
 import { GetStaticProps, GetStaticPaths } from 'next';
-import 'twin.macro';
 import { getLayout } from '../../components/SiteLayout';
 import PostView from '../../components/Blog/Post';
+import SubscribeBox from '../../components/SubscribeBox';
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 
 function BlogPost({ post }) {
@@ -21,6 +22,7 @@ function BlogPost({ post }) {
           <article tw="prose prose-purple prose-sm sm:prose lg:prose-lg xl:prose-xl">
             <PostView markdown={post.content} post={post} />
           </article>
+          <SubscribeBox />
         </>
       )}
     </div>
