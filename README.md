@@ -4,7 +4,7 @@ This is the source code for [jonleopard.com](https://jonleopard.com).
 
 ### Requirements for local development
 
-- [Node](https://nodejs.org/en/) (I'm using v12.19.0)
+- [Node](https://nodejs.org/en/)
 
 ### Installing
 
@@ -14,7 +14,7 @@ This is the source code for [jonleopard.com](https://jonleopard.com).
 
 ### Stack
 
-- Site Generator
+- React Framework
   - [NextJS](https://nextjs.org/)
 - CMS
   - [Contentful](https://www.contentful.com/)
