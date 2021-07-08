@@ -44,7 +44,7 @@ export default function SubscribeBox() {
           <p tw="text-lg tracking-tight text-gray-600">
             Get a monthly newsletter delivered straight to your inbox! I aim to
             write 2 - 4 times a month, and include curated news from topics such
-            as tech, to science. Your email stays private and spam free!
+            as tech, to science. No spam, unsubscribe at any time.
           </p>
           {status === 'succeeded' ? (
             <p tw="text-green-500 mt-2">
