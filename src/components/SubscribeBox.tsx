@@ -37,7 +37,7 @@ export default function SubscribeBox() {
   return (
     <>
       <div tw="bg-white">
-        <div tw="max-w-7xl mx-auto pt-12">
+        <div tw="max-w-7xl mx-auto">
           <h2 tw="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Subscribe to the newsletter
           </h2>
