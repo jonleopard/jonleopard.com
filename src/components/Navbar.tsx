@@ -26,9 +26,9 @@ const StyledLink = styled.span`
 function NavLinks({ activeRoute }: Props) {
   return (
     <>
-      <StyledLink isActive={activeRoute === 'Jon Leopard'}>
+      <StyledLink isActive={activeRoute === 'Home'}>
         <Link href="/">
-          <a>Jon Leopard</a>
+          <a>Home</a>
         </Link>
       </StyledLink>
 
