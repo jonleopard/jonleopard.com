@@ -14,7 +14,9 @@ function BlogIndex({ posts }) {
       <div tw="max-w-3xl mx-auto px-4">
         <h1 tw="block text-5xl font-bold leading-none mb-10">Blog</h1>
         <BlogList posts={posts} />
-        <SubscribeBox />
+        <div tw="pt-12">
+          <SubscribeBox />
+        </div>
       </div>
     </>
   );

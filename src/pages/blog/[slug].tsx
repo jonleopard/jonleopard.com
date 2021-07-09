@@ -22,7 +22,9 @@ function BlogPost({ post }) {
           <article tw="prose prose-purple prose-sm sm:prose lg:prose-lg xl:prose-xl">
             <PostView markdown={post.content} post={post} />
           </article>
-          <SubscribeBox />
+          <div tw="pt-12">
+            <SubscribeBox />
+          </div>
         </>
       )}
     </div>
