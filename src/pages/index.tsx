@@ -21,8 +21,8 @@ function Index() {
               </span>
             </h1>
             <p tw="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              I help individuals & enterprises solve their online problems and
-              I’m currently{' '}
+              I help individuals & enterprises solve technical problems I’m
+              currently{' '}
               <span tw="bg-green-100 text-green-800 inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium md:mt-2 lg:mt-0">
                 available
               </span>{' '}
