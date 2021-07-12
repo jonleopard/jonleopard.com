@@ -15,7 +15,7 @@ function Index() {
               <span tw="block xl:inline">
                 Hey! I'm Jon <Emoji symbol="👋🏻" label="Waving" />
               </span>{' '}
-              <span tw="block text-5xl text-gray-600 xl:inline">
+              <span tw="block text-5xl text-gray-600">
                 {' '}
                 I'm a Front End Developer and API Specialist living in Paris, FR
               </span>
