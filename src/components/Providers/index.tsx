@@ -1,25 +1,23 @@
-import * as React from 'react';
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from 'twin.macro';
+import { createGlobalStyle } from 'styled-components';
+import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro';
 import PlausibleProvider from 'next-plausible';
-import 'tailwindcss/dist/base.min.css';
 import SEO from './SEO';
 
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-};
+const CustomStyles = createGlobalStyle`
+  body {
+    -webkit-tap-highlight-color: ${theme`colors.purple.500`};
+    ${tw`antialiased`}
+  }
+`;
 
 const Provider = ({ children }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <PlausibleProvider domain="jonleopard.com">
-        <SEO />
-        <GlobalStyles />
-        {children}
-      </PlausibleProvider>
-    </ThemeProvider>
+    <PlausibleProvider domain="jonleopard.com">
+      <SEO />
+      <BaseStyles />
+      <CustomStyles />
+      {children}
+    </PlausibleProvider>
   );
 };
 export default Provider;
