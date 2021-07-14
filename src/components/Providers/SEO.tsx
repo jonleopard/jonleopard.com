@@ -2,28 +2,7 @@ import * as React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { DefaultSeo } from 'next-seo';
-
-const SeoConfig = {
-  title: 'Jon Leopard',
-  description: 'Web Developer',
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://jonleopard.com',
-    site_name: 'Jon Leopard',
-    images: [
-      {
-        url: 'https://jonleopard.com/meta/og-image.png',
-        alt: 'Jon Leopard',
-      },
-    ],
-  },
-  twitter: {
-    handle: '@jonlprd',
-    site: '@jonlprd',
-    cardType: 'summary_large_image',
-  },
-};
+import { defaultSEO } from '../../config/seo';
 
 export default function SEO() {
   const router = useRouter();
@@ -35,7 +14,7 @@ export default function SEO() {
 
   return (
     <>
-      <DefaultSeo {...SeoConfig} />
+      <DefaultSeo {...defaultSEO} />
       <Head>
         <meta name="theme-color" content="#fefefe" />
         <link rel="apple-touch-icon" href="/meta/apple-touch-icon.png" />
