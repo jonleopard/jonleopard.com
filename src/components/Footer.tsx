@@ -26,7 +26,7 @@ function Footer() {
       <div tw="flex-col max-w-3xl pb-6 mx-auto flex text-gray-600 items-center">
         <div tw="flex justify-between w-1/2 text-2xl">
           <a href="https://github.com/jonleopard" tw="hover:text-indigo-600">
-            <FaGithub tw="w-4" />
+            <FaGithub />
           </a>
           <a href="https://twitter.com/jonlprd" tw="hover:text-indigo-600">
             <FaTwitter />
