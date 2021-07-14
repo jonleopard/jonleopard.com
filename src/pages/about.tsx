@@ -1,5 +1,7 @@
 import 'twin.macro';
 import Emoji from 'a11y-react-emoji';
+import { NextSeo } from 'next-seo';
+import routes from '../config/routes';
 import PreviewCard from '../components/PreviewCard';
 import { getLayout } from '../components/SiteLayout';
 
@@ -136,12 +138,19 @@ function RandomBits() {
 
 function About() {
   return (
-    <div tw="max-w-3xl mx-auto px-4">
-      <div tw="grid grid-cols-1 gap-10">
-        <Intro />
-        <RandomBits />
+    <>
+      <NextSeo
+        title={routes.about.seo.title}
+        description={routes.about.seo.description}
+        openGraph={routes.about.seo.openGraph}
+      />
+      <div tw="max-w-3xl mx-auto px-4">
+        <div tw="grid grid-cols-1 gap-10">
+          <Intro />
+          <RandomBits />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
