@@ -1,12 +1,11 @@
 import * as React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faGithub,
-  faTwitter,
-  faStackOverflow,
-  faTelegram,
-} from '@fortawesome/free-brands-svg-icons';
-import { faKey } from '@fortawesome/free-solid-svg-icons';
+  FaGithub,
+  FaStackOverflow,
+  FaTelegram,
+  FaTwitter,
+  FaKeybase,
+} from 'react-icons/fa';
 import styled from 'styled-components';
 import 'twin.macro';
 
@@ -24,32 +23,32 @@ function Footer() {
   const WHAT_YEAR_IS_IT = new Date().getFullYear();
   return (
     <footer>
-      <div tw="w-full flex-col max-w-3xl pt-10 pb-6 mx-auto flex text-xs font-bold uppercase text-gray-600  items-center">
-        <div tw="flex justify-between w-1/2">
-          <a href="https://github.com/jonleopard" tw="hover:text-purple-600">
-            <FontAwesomeIcon icon={faGithub} size="2x" />
+      <div tw="flex-col max-w-3xl pb-6 mx-auto flex text-gray-600 items-center">
+        <div tw="flex justify-between w-1/2 text-2xl">
+          <a href="https://github.com/jonleopard" tw="hover:text-indigo-600">
+            <FaGithub tw="w-4" />
           </a>
-          <a href="https://twitter.com/jonlprd" tw="hover:text-purple-600">
-            <FontAwesomeIcon icon={faTwitter} size="2x" />
+          <a href="https://twitter.com/jonlprd" tw="hover:text-indigo-600">
+            <FaTwitter />
           </a>
           <a
             href="https://stackoverflow.com/users/10541736/jon-leopard"
-            tw="hover:text-purple-600"
+            tw="hover:text-indigo-600"
           >
-            <FontAwesomeIcon icon={faStackOverflow} size="2x" />
+            <FaStackOverflow tw="w-full" />
           </a>
-          <a href="https://t.me/hiJon" tw="hover:text-purple-600">
-            <FontAwesomeIcon icon={faTelegram} size="2x" />
+          <a href="https://t.me/hiJon" tw="hover:text-indigo-600">
+            <FaTelegram />
           </a>
           <a
             href="https://keybase.io/jonleopard/pgp_keys.asc"
-            tw="hover:text-purple-600"
+            tw="hover:text-indigo-600"
           >
-            <FontAwesomeIcon icon={faKey} size="2x" />
+            <FaKeybase />
           </a>
         </div>
         <div tw="mt-2">
-          <span>
+          <span tw="font-bold text-sm">
             &copy;
             {WHAT_YEAR_IS_IT}
           </span>
