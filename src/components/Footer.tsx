@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {
   FaGithub,
+  FaKeybase,
   FaStackOverflow,
   FaTelegram,
   FaTwitter,
-  FaKeybase,
 } from 'react-icons/fa';
 import styled from 'styled-components';
 import 'twin.macro';

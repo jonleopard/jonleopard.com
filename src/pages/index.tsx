@@ -51,6 +51,9 @@ function Index() {
   );
 }
 
+
 Index.getLayout = getLayout;
+
+console.log(typeof (Link))
 
 export default Index;
