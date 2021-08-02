@@ -1,11 +1,11 @@
-import * as React from 'react';
-import Link from 'next/link';
-import styled from 'styled-components';
-import 'twin.macro';
-import { FormatDate } from '../../Date';
+import * as React from 'react'
+import Link from 'next/link'
+import styled from 'styled-components'
+import 'twin.macro'
+import { FormatDate } from '../../Date'
 
 interface LineClamp {
-  lines: number;
+  lines: number
 }
 
 // Might extract these two later
@@ -14,10 +14,10 @@ const LineClamp = styled.span`
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;
-`;
+`
 
 function BlogList({ posts }) {
-  if (!posts || posts.length === 0) return null;
+  if (!posts || posts.length === 0) return null
   return (
     <div tw="grid grid-cols-1 gap-8">
       {posts.map((post) => (
@@ -38,7 +38,7 @@ function BlogList({ posts }) {
         </div>
       ))}
     </div>
-  );
+  )
 }
 
-export default BlogList;
+export default BlogList

@@ -1,8 +1,8 @@
-import 'twin.macro';
-import { NextSeo } from 'next-seo';
-import routes from '../config/routes';
-import { getLayout } from '../components/SiteLayout';
-import OSSItem from '../components/OSSItem';
+import 'twin.macro'
+import { NextSeo } from 'next-seo'
+import routes from '../config/routes'
+import { getLayout } from '../components/SiteLayout'
+import OSSItem from '../components/OSSItem'
 
 function OSSProjects() {
   return (
@@ -48,7 +48,7 @@ function OSSProjects() {
         />
       </div>
     </div>
-  );
+  )
 }
 
 function WorkHistory() {
@@ -92,7 +92,7 @@ function WorkHistory() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Projects() {
@@ -111,9 +111,9 @@ function Projects() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-Projects.getLayout = getLayout;
+Projects.getLayout = getLayout
 
-export default Projects;
+export default Projects

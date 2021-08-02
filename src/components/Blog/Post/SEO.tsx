@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { NextSeo } from 'next-seo';
-import Head from 'next/head';
+import * as React from 'react'
+import { NextSeo } from 'next-seo'
+import Head from 'next/head'
 
 function SEO({ post }) {
   return (
@@ -36,7 +36,7 @@ function SEO({ post }) {
         }}
       />
     </>
-  );
+  )
 }
 
-export default SEO;
+export default SEO

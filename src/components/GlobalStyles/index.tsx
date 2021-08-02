@@ -1,5 +1,5 @@
-import PrismStyles from './prism';
+import PrismStyles from './prism'
 
 export default {
   PrismStyles,
-};
+}

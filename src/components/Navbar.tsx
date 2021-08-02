@@ -1,12 +1,12 @@
-import * as React from 'react';
-import tw from 'twin.macro';
-import Link from 'next/link';
-import { Disclosure } from '@headlessui/react';
-import { FiMenu, FiX } from 'react-icons/fi';
-import { useRouter } from 'next/router';
-import routes from '../config/routes';
+import * as React from 'react'
+import tw from 'twin.macro'
+import Link from 'next/link'
+import { Disclosure } from '@headlessui/react'
+import { FiMenu, FiX } from 'react-icons/fi'
+import { useRouter } from 'next/router'
+import routes from '../config/routes'
 
-const defaultRoutes = [routes.home, routes.about, routes.projects, routes.blog];
+const defaultRoutes = [routes.home, routes.about, routes.projects, routes.blog]
 
 const StyledLink = ({ isActive, children, href }) => (
   <Link href={href} passHref>
@@ -19,10 +19,10 @@ const StyledLink = ({ isActive, children, href }) => (
       {children}
     </a>
   </Link>
-);
+)
 
 function Navbar() {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <Disclosure as="nav">
       {({ open }) => (
@@ -44,7 +44,7 @@ function Navbar() {
                 <div tw="hidden sm:block">
                   <div tw="flex space-x-4 -ml-5">
                     {defaultRoutes.map((route) => {
-                      const isActive = route.path === router.pathname;
+                      const isActive = route.path === router.pathname
                       return (
                         <StyledLink
                           href={route.path}
@@ -53,7 +53,7 @@ function Navbar() {
                         >
                           {route.label}
                         </StyledLink>
-                      );
+                      )
                     })}
                   </div>
                 </div>
@@ -63,7 +63,7 @@ function Navbar() {
           <Disclosure.Panel tw="sm:hidden">
             <div tw="px-2 pt-2 pb-3 space-y-1">
               {defaultRoutes.map((route) => {
-                const isActive = route.path === router.pathname;
+                const isActive = route.path === router.pathname
                 return (
                   <StyledLink
                     href={route.path}
@@ -72,14 +72,14 @@ function Navbar() {
                   >
                     {route.label}
                   </StyledLink>
-                );
+                )
               })}
             </div>
           </Disclosure.Panel>
         </>
       )}
     </Disclosure>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

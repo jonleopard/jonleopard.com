@@ -1,12 +1,12 @@
-import 'twin.macro';
-import Emoji from 'a11y-react-emoji';
+import 'twin.macro'
+import Emoji from 'a11y-react-emoji'
 
 interface OSSItemProps {
-  href: string;
-  symbol: string;
-  label: string;
-  title: string;
-  description: string;
+  href: string
+  symbol: string
+  label: string
+  title: string
+  description: string
 }
 
 function OSSItem({ href, symbol, label, title, description }: OSSItemProps) {
@@ -23,7 +23,7 @@ function OSSItem({ href, symbol, label, title, description }: OSSItemProps) {
       </a>
       <p>{description}</p>
     </div>
-  );
+  )
 }
 
-export default OSSItem;
+export default OSSItem

@@ -1,14 +1,14 @@
-import { createGlobalStyle } from 'styled-components';
-import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro';
-import PlausibleProvider from 'next-plausible';
-import SEO from './SEO';
+import { createGlobalStyle } from 'styled-components'
+import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro'
+import PlausibleProvider from 'next-plausible'
+import SEO from './SEO'
 
 const CustomStyles = createGlobalStyle`
   body {
     -webkit-tap-highlight-color: ${theme`colors.purple.500`};
     ${tw`antialiased`}
   }
-`;
+`
 
 const Provider = ({ children }) => {
   return (
@@ -18,6 +18,6 @@ const Provider = ({ children }) => {
       <CustomStyles />
       {children}
     </PlausibleProvider>
-  );
-};
-export default Provider;
+  )
+}
+export default Provider

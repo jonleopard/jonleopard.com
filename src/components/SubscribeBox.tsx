@@ -1,37 +1,37 @@
-import { useState } from 'react';
-import Emoji from 'a11y-react-emoji';
-import 'twin.macro';
+import { useState } from 'react'
+import Emoji from 'a11y-react-emoji'
+import 'twin.macro'
 
 export default function SubscribeBox() {
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('pending');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [email, setEmail] = useState('')
+  const [status, setStatus] = useState('pending')
+  const [errorMessage, setErrorMessage] = useState('')
 
   function onChange(e) {
-    if (status !== 'pending') setStatus('pending');
-    return setEmail(e.target.value.trim());
+    if (status !== 'pending') setStatus('pending')
+    return setEmail(e.target.value.trim())
   }
 
   async function submit(e) {
-    e.preventDefault();
+    e.preventDefault()
 
     const res = await fetch('/api/newsletter', {
       body: JSON.stringify({ email }),
       headers: { 'Content-Type': 'application/json' },
       method: 'POST',
-    });
-    console.log(res);
+    })
+    console.log(res)
 
-    const { error } = await res.json();
+    const { error } = await res.json()
 
     if (error) {
-      setStatus('error');
-      setErrorMessage(error);
-      return;
+      setStatus('error')
+      setErrorMessage(error)
+      return
     }
 
-    setEmail('');
-    setStatus('succeeded');
+    setEmail('')
+    setStatus('succeeded')
   }
 
   return (
@@ -82,5 +82,5 @@ export default function SubscribeBox() {
         </div>
       </div>
     </>
-  );
+  )
 }

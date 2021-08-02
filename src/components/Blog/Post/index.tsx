@@ -1,19 +1,19 @@
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import 'twin.macro';
-import SEO from './SEO';
-import SyntaxHighlighter from '../../SyntaxHighlighter';
-import GlobalPrismStyles from '../../GlobalStyles/prism';
-import { FormatDate, DateDistance } from '../../Date';
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
+import 'twin.macro'
+import SEO from './SEO'
+import SyntaxHighlighter from '../../SyntaxHighlighter'
+import GlobalPrismStyles from '../../GlobalStyles/prism'
+import { FormatDate, DateDistance } from '../../Date'
 
 type PostProps = {
-  markdown: string;
+  markdown: string
   post: {
-    title: string;
-    date: string;
-    updatedAt: string;
-  };
-};
+    title: string
+    date: string
+    updatedAt: string
+  }
+}
 
 function PostView({
   markdown,
@@ -44,7 +44,7 @@ function PostView({
         {markdown}
       </ReactMarkdown>
     </>
-  );
+  )
 }
 
-export default PostView;
+export default PostView

@@ -1,9 +1,9 @@
-import * as React from 'react';
-import 'twin.macro';
-import Emoji from 'a11y-react-emoji';
-import Link from 'next/link';
-import { PopupButton } from 'react-calendly';
-import { getLayout } from '../components/SiteLayout';
+import * as React from 'react'
+import 'twin.macro'
+import Emoji from 'a11y-react-emoji'
+import Link from 'next/link'
+import { PopupButton } from 'react-calendly'
+import { getLayout } from '../components/SiteLayout'
 
 function Index() {
   return (
@@ -48,9 +48,9 @@ function Index() {
         </main>
       </div>
     </>
-  );
+  )
 }
 
-Index.getLayout = getLayout;
+Index.getLayout = getLayout
 
-export default Index;
+export default Index

@@ -1,26 +1,26 @@
-import * as React from 'react';
+import * as React from 'react'
 import {
   FaGithub,
   FaKeybase,
   FaStackOverflow,
   FaTelegram,
   FaTwitter,
-} from 'react-icons/fa';
-import styled from 'styled-components';
-import 'twin.macro';
+} from 'react-icons/fa'
+import styled from 'styled-components'
+import 'twin.macro'
 
 interface Line {
-  height: string;
-  color: string;
+  height: string
+  color: string
 }
 
 const Line = styled.hr`
   border-top: ${(props: Line) => props.height} solid
     ${(props: Line) => props.color};
-`;
+`
 
 function Footer() {
-  const WHAT_YEAR_IS_IT = new Date().getFullYear();
+  const WHAT_YEAR_IS_IT = new Date().getFullYear()
   return (
     <footer>
       <div tw="flex-col max-w-3xl pb-6 mx-auto flex text-gray-600 items-center">
@@ -63,7 +63,7 @@ function Footer() {
         <Line height="1px" color="#009ddc" />
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

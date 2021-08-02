@@ -1,20 +1,20 @@
-import { Feed } from 'feed';
-import fs from 'fs';
-import { markdown } from 'markdown';
-import { rssFeedEntries } from './api';
+import { Feed } from 'feed'
+import fs from 'fs'
+import { markdown } from 'markdown'
+import { rssFeedEntries } from './api'
 
 async function generateRssFeed() {
   if (process.env.NODE_ENV === 'development') {
-    return;
+    return
   }
 
-  const baseUrl = 'https://jonleopard.com';
-  const date = new Date();
+  const baseUrl = 'https://jonleopard.com'
+  const date = new Date()
   const author = {
     name: 'Jon Leopard',
     email: 'contact@jonleopard.com',
     link: 'https://twitter.com/jonlprd',
-  };
+  }
   const feed = new Feed({
     title: `jonleopard.com | Blog`,
     description: 'The writings of Jon Leopard',
@@ -32,12 +32,12 @@ async function generateRssFeed() {
       atom: `${baseUrl}/rss/atom.xml`,
     },
     author,
-  });
+  })
 
-  const posts = await rssFeedEntries();
+  const posts = await rssFeedEntries()
 
   posts.forEach((post) => {
-    const url = `${baseUrl}/blog/${post.slug}`;
+    const url = `${baseUrl}/blog/${post.slug}`
     feed.addItem({
       title: post.title,
       id: url,
@@ -45,13 +45,13 @@ async function generateRssFeed() {
       description: post.description,
       content: markdown.toHTML(post.content),
       date: new Date(post.date),
-    });
-  });
+    })
+  })
 
-  fs.mkdirSync('./public/rss', { recursive: true });
-  fs.writeFileSync('./public/rss/feed.xml', feed.rss2());
-  fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
-  fs.writeFileSync('./public/rss/feed.json', feed.json1());
+  fs.mkdirSync('./public/rss', { recursive: true })
+  fs.writeFileSync('./public/rss/feed.xml', feed.rss2())
+  fs.writeFileSync('./public/rss/atom.xml', feed.atom1())
+  fs.writeFileSync('./public/rss/feed.json', feed.json1())
 }
 
-export default generateRssFeed;
+export default generateRssFeed
