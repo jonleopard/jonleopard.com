@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { format, formatDistanceToNow } from 'date-fns';
-import 'twin.macro';
+import * as React from 'react'
+import { format, formatDistanceToNow } from 'date-fns'
+import 'twin.macro'
 
 type DateFormatProps = {
-  dateString: string;
-  text: string;
-};
+  dateString: string
+  text: string
+}
 
 function FormatDate({ text, dateString }: DateFormatProps) {
   return (
@@ -17,7 +17,7 @@ function FormatDate({ text, dateString }: DateFormatProps) {
         </time>
       </div>
     </>
-  );
+  )
 }
 
 function DateDistance({ text, dateString }: DateFormatProps) {
@@ -32,7 +32,7 @@ function DateDistance({ text, dateString }: DateFormatProps) {
         </time>
       </div>
     </>
-  );
+  )
 }
 
-export { FormatDate, DateDistance };
+export { FormatDate, DateDistance }

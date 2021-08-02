@@ -1,16 +1,16 @@
-import * as React from 'react';
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { DefaultSeo } from 'next-seo';
-import { defaultSEO } from '../../config/seo';
+import * as React from 'react'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { DefaultSeo } from 'next-seo'
+import { defaultSEO } from '../../config/seo'
 
 export default function SEO() {
-  const router = useRouter();
+  const router = useRouter()
 
-  let emoji = '🥞';
-  if (router.route.indexOf('/about') === 0) emoji = '🧑🏼‍💻';
-  if (router.route.indexOf('/projects') === 0) emoji = '🛠';
-  if (router.route.indexOf('/blog') === 0) emoji = '📚';
+  let emoji = '🥞'
+  if (router.route.indexOf('/about') === 0) emoji = '🧑🏼‍💻'
+  if (router.route.indexOf('/projects') === 0) emoji = '🛠'
+  if (router.route.indexOf('/blog') === 0) emoji = '📚'
 
   return (
     <>
@@ -26,5 +26,5 @@ export default function SEO() {
         />
       </Head>
     </>
-  );
+  )
 }

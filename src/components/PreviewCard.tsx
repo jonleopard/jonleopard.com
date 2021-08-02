@@ -1,26 +1,26 @@
-import 'twin.macro';
-import React, { useState } from 'react';
-import { usePopper } from 'react-popper';
+import 'twin.macro'
+import React, { useState } from 'react'
+import { usePopper } from 'react-popper'
 
 interface PreviewCardProps {
-  src: string;
-  text: string;
+  src: string
+  text: string
 }
 
 function PreviewCard({ src, text }: PreviewCardProps) {
-  const [isShown, setIsShown] = React.useState(false);
-  const [referenceElement, setReferenceElement] = useState(null);
-  const [popperElement, setPopperElement] = useState(null);
+  const [isShown, setIsShown] = React.useState(false)
+  const [referenceElement, setReferenceElement] = useState(null)
+  const [popperElement, setPopperElement] = useState(null)
   const { styles, attributes } = usePopper(referenceElement, popperElement, {
     modifiers: [{ name: 'arrow' }],
-  });
+  })
 
   return (
     <>
       <a
         tw="text-blue-600 cursor-pointer visited:text-purple-600"
         onMouseEnter={() => {
-          setIsShown(true);
+          setIsShown(true)
         }}
         onMouseLeave={() => setIsShown(false)}
         ref={setReferenceElement}
@@ -37,7 +37,7 @@ function PreviewCard({ src, text }: PreviewCardProps) {
         />
       )}
     </>
-  );
+  )
 }
 
-export default PreviewCard;
+export default PreviewCard

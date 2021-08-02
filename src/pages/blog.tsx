@@ -1,14 +1,14 @@
-import * as React from 'react';
-import 'twin.macro';
-import { GetStaticProps } from 'next';
-import { NextSeo } from 'next-seo';
-import { getAllPostsForBlogList } from '../lib/api';
-import generateRssFeed from '../lib/rss';
-import generateSitemap from '../lib/sitemap';
-import SubscribeBox from '../components/SubscribeBox';
-import BlogList from '../components/Blog/List';
-import { getLayout } from '../components/SiteLayout';
-import routes from '../config/routes';
+import * as React from 'react'
+import 'twin.macro'
+import { GetStaticProps } from 'next'
+import { NextSeo } from 'next-seo'
+import { getAllPostsForBlogList } from '../lib/api'
+import generateRssFeed from '../lib/rss'
+import generateSitemap from '../lib/sitemap'
+import SubscribeBox from '../components/SubscribeBox'
+import BlogList from '../components/Blog/List'
+import { getLayout } from '../components/SiteLayout'
+import routes from '../config/routes'
 
 function BlogIndex({ posts }) {
   return (
@@ -26,19 +26,19 @@ function BlogIndex({ posts }) {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-BlogIndex.getLayout = getLayout;
+BlogIndex.getLayout = getLayout
 
-export default BlogIndex;
+export default BlogIndex
 
 export const getStaticProps: GetStaticProps = async () => {
-  await generateRssFeed();
-  await generateSitemap();
+  await generateRssFeed()
+  await generateSitemap()
 
-  const posts = await getAllPostsForBlogList();
+  const posts = await getAllPostsForBlogList()
   return {
     props: { posts },
-  };
-};
+  }
+}

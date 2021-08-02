@@ -1,9 +1,9 @@
-import 'twin.macro';
-import Emoji from 'a11y-react-emoji';
-import { NextSeo } from 'next-seo';
-import routes from '../config/routes';
-import PreviewCard from '../components/PreviewCard';
-import { getLayout } from '../components/SiteLayout';
+import 'twin.macro'
+import Emoji from 'a11y-react-emoji'
+import { NextSeo } from 'next-seo'
+import routes from '../config/routes'
+import PreviewCard from '../components/PreviewCard'
+import { getLayout } from '../components/SiteLayout'
 
 function Intro() {
   return (
@@ -31,7 +31,7 @@ function Intro() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function RandomBits() {
@@ -133,7 +133,7 @@ function RandomBits() {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
 function About() {
@@ -151,9 +151,9 @@ function About() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-About.getLayout = getLayout;
+About.getLayout = getLayout
 
-export default About;
+export default About

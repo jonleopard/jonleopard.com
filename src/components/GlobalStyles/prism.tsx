@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalPrismStyles = createGlobalStyle`
 code[class*="language-"],
@@ -133,6 +133,6 @@ pre.language-bash .token.function {
   cursor: help;
 }
 
-`;
+`
 
-export default GlobalPrismStyles;
+export default GlobalPrismStyles
