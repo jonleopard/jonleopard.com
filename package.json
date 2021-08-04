@@ -29,7 +29,7 @@
   "pre-commit": "lint:staged && generate",
   "dependencies": {
     "@headlessui/react": "^1.3.0",
-    "@popperjs/core": "^2.9.2",
+    "@popperjs/core": "^2.9.3",
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",
     "a11y-react-emoji": "^1.1.3",
