@@ -1,5 +1,6 @@
 import 'twin.macro'
 import Emoji from 'a11y-react-emoji'
+import Image from 'next/image'
 import { NextSeo } from 'next-seo'
 import routes from '../config/routes'
 import PreviewCard from '../components/PreviewCard'
@@ -27,7 +28,13 @@ function Intro() {
           </a>
         </p>
         <div>
-          <img tw="rounded-xl" src="/img/jon-andorra.jpeg" />
+          <Image
+            height={1280}
+            width={1078}
+            tw="rounded-xl"
+            alt="jon-andorra"
+            src="/img/jon-andorra.jpeg"
+          />
         </div>
       </div>
     </div>
@@ -39,10 +46,10 @@ function RandomBits() {
     <div>
       <h1 tw="text-2xl text-gray-900 font-semibold">Random bits</h1>
       <div tw="grid grid-cols-1 gap-4">
-        <p>
+        <div>
           Computers have been a part of my life since I was a{' '}
           <PreviewCard text="youngling" src="/img/computer-nerd.jpeg" />.
-        </p>
+        </div>
         <p>
           I'm a huge gamer! My first experiences were{' '}
           <a
@@ -96,13 +103,13 @@ function RandomBits() {
           chassis and some leftover server components from my Dad.
         </p>
 
-        <p>
+        <div>
           Music is one of my hobbies. I've been drumming since I could{' '}
           <PreviewCard text="hold a pair of sticks" src="/img/drums.jpeg" /> and
           picked up the guitar when I was 9.
-        </p>
+        </div>
 
-        <p>
+        <div>
           I discovered the world of coffee at a young age when my Dad started
           his own{' '}
           <PreviewCard
@@ -113,7 +120,7 @@ function RandomBits() {
           <PreviewCard text="storefront" src="/img/colorado-bean.png" /> in 2001
           where I learned how to pull a good shot, and brew a perfect cup of
           joe.
-        </p>
+        </div>
         <p>
           I'm a{' '}
           <a

@@ -1,4 +1,5 @@
 import 'twin.macro'
+import Image from 'next/image'
 import React, { useState } from 'react'
 import { usePopper } from 'react-popper'
 
@@ -28,13 +29,15 @@ function PreviewCard({ src, text }: PreviewCardProps) {
         {text}
       </a>
       {isShown && (
-        <img
-          src={src}
+        <div
           ref={setPopperElement}
           style={styles.popper}
           {...attributes.popper}
-          tw="rounded w-44 lg:w-72 z-10"
-        />
+        >
+          <div tw="w-44 h-52 lg:w-72">
+            <Image layout="fill" objectFit="contain" src={src} alt={text} />
+          </div>
+        </div>
       )}
     </>
   )

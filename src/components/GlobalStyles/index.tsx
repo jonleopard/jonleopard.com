@@ -1,5 +1,3 @@
 import PrismStyles from './prism'
 
-export default {
-  PrismStyles,
-}
+export default PrismStyles

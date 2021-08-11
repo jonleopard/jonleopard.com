@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import { NextApiRequest, NextApiResponse } from 'next'
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const newsletter = async (req: NextApiRequest, res: NextApiResponse) => {
   const { email } = req.body
 
   if (!email) {
@@ -43,3 +43,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
   return res.status(201).json({ error: '' })
 }
+
+export default newsletter

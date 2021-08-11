@@ -9,14 +9,14 @@ import {
 import styled from 'styled-components'
 import 'twin.macro'
 
-interface Line {
+type LineProps = {
   height: string
   color: string
 }
 
 const Line = styled.hr`
-  border-top: ${(props: Line) => props.height} solid
-    ${(props: Line) => props.color};
+  border-top: ${(props: LineProps) => props.height} solid
+    ${(props: LineProps) => props.color};
 `
 
 function Footer() {
