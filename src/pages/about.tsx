@@ -29,8 +29,10 @@ function Intro() {
         </p>
         <div>
           <Image
-            height={1280}
-            width={1078}
+            height={873}
+            width={736}
+            blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcv3VrPQAHDgKqSdQCcwAAAABJRU5ErkJggg=="
+            placeholder="blur"
             tw="rounded-xl"
             alt="jon-andorra"
             src="/img/jon-andorra.jpeg"

@@ -35,7 +35,8 @@ function PreviewCard({ src, text }: PreviewCardProps) {
           {...attributes.popper}
         >
           <div tw="w-44 h-52 lg:w-72">
-            <Image layout="fill" objectFit="contain" src={src} alt={text} />
+            <Image              blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcv3VrPQAHDgKqSdQCcwAAAABJRU5ErkJggg=="
+layout="fill" objectFit="contain" src={src} alt={text} />
           </div>
         </div>
       )}
