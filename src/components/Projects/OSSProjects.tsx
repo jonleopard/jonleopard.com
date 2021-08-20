@@ -47,7 +47,6 @@ export default function OSSProjects() {
           href="https://github.com/jonleopard/moonphase.space"
           title="moonphase.space"
         >
-
           A tiny app that displays the current moon phase.
         </ListItem>
       </div>
