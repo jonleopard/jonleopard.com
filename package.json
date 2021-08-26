@@ -58,7 +58,7 @@
     "@types/node": "^16.7.1",
     "@types/prismjs": "^1.16.6",
     "@types/react": "^17.0.19",
-    "@types/styled-components": "^5.1.12",
+    "@types/styled-components": "^5.1.13",
     "babel-eslint": "^10.1.0",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-styled-components": "^1.13.2",
