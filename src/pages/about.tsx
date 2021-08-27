@@ -1,8 +1,8 @@
-import 'twin.macro'
 import { NextSeo } from 'next-seo'
-import routes from '../config/routes'
+import 'twin.macro'
+import { Intro, RandomBits } from '../components/About'
 import { getLayout } from '../components/SiteLayout'
-import { RandomBits, Intro } from '../components/About'
+import routes from '../config/routes'
 
 function About() {
   return (

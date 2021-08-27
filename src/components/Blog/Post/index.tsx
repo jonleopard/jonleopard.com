@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import 'twin.macro'
-import SEO from './SEO'
-import SyntaxHighlighter from '../../SyntaxHighlighter'
+import { DateDistance, FormatDate } from '../../Date'
 import GlobalPrismStyles from '../../GlobalStyles/prism'
-import { FormatDate, DateDistance } from '../../Date'
+import SyntaxHighlighter from '../../SyntaxHighlighter'
+import SEO from './SEO'
 
 type PostProps = {
   markdown: string
