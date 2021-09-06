@@ -7,7 +7,7 @@
       "preset": "styled-components"
     }
   },
-  "scripts": { 
+  "scripts": {
     "lint": "eslint ./src/pages/* ./src/components/* ./src/lib/* -c .eslintrc.json --fix --ext ts,tsx",
     "dev": "next",
     "build": "next build",
@@ -29,11 +29,11 @@
   "pre-commit": "lint:staged && generate",
   "dependencies": {
     "@headlessui/react": "^1.4.1",
-    "@popperjs/core": "^2.9.3",
+    "@popperjs/core": "^2.10.1",
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",
     "a11y-react-emoji": "^1.1.3",
-    "contentful": "^8.5.0",
+    "contentful": "^8.5.5",
     "date-fns": "^2.23.0",
     "dotenv": "^10.0.0",
     "isomorphic-unfetch": "^3.1.0",
@@ -53,12 +53,12 @@
     "twin.macro": "^2.7.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.15.5",
     "@next/eslint-plugin-next": "^11.1.2",
-    "@types/node": "^16.7.8",
+    "@types/node": "^16.7.10",
     "@types/prismjs": "^1.16.6",
-    "@types/react": "^17.0.19",
-    "@types/styled-components": "^5.1.13",
+    "@types/react": "^17.0.20",
+    "@types/styled-components": "^5.1.14",
     "babel-eslint": "^10.1.0",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-styled-components": "^1.13.2",
