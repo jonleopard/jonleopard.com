@@ -55,7 +55,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@next/eslint-plugin-next": "^11.1.2",
-    "@types/node": "^16.9.1",
+    "@types/node": "^16.9.2",
     "@types/prismjs": "^1.16.6",
     "@types/react": "^17.0.20",
     "@types/styled-components": "^5.1.14",
