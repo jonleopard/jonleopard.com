@@ -57,7 +57,7 @@
     "@next/eslint-plugin-next": "^11.1.2",
     "@types/node": "^16.9.4",
     "@types/prismjs": "^1.16.6",
-    "@types/react": "^17.0.22",
+    "@types/react": "^17.0.26",
     "@types/styled-components": "^5.1.14",
     "babel-eslint": "^10.1.0",
     "babel-plugin-macros": "^3.1.0",
