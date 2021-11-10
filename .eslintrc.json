@@ -2,13 +2,11 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended",
     "next",
     "prettier"
   ],
   "plugins": [
-    "react",
-    "prettier"
+    "react"
   ],
   "env": {
     "node": true,
@@ -16,13 +14,6 @@
     "es6": true
   },
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "semi": false
-      }
-    ],
     "react/no-unescaped-entities": 0,
     "react/prop-types": "off",
     "react/display-name": "off",
