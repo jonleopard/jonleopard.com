@@ -3,7 +3,7 @@
  */
 const nextConfig = {
   swcMinify: false,
-  webpack5: true,
+  future: { webpack5: true },
 };
 
 export default nextConfig;
