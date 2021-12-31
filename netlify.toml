@@ -3,5 +3,5 @@
   to = "/blog/dotfile-management-with-gnu-stow"
 
 [build]
-  command = "npm run build"
+  publish = ".next"
 
