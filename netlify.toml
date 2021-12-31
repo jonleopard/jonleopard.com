@@ -1,7 +1,3 @@
-[[redirects]]
-  from = "/dotfile-management-with-gnu-stow"
-  to = "/blog/dotfile-management-with-gnu-stow"
-
 [build]
   publish = ".next"
 
