@@ -2,7 +2,7 @@ import * as React from 'react'
 import 'twin.macro'
 import Emoji from 'a11y-react-emoji'
 import Link from 'next/link'
-import { PopupButton } from 'react-calendly'
+//import { PopupButton } from 'react-calendly'
 import { getLayout } from '../components/SiteLayout'
 
 function Index() {
@@ -17,7 +17,7 @@ function Index() {
               </span>{' '}
               <span tw="block text-5xl text-gray-600">
                 {' '}
-                I'm a Front End Developer and API Specialist living in Paris, FR
+                I'm a Front End Developer and API Specialist
               </span>
             </h1>
             <p tw="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
