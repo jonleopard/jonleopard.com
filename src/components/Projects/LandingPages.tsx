@@ -27,8 +27,7 @@ export default function LandingPages() {
           href="https://solar-landing.jonleopard.com"
           title="Solar"
         >
-          Another performant landing page tailored for generating solar leads.
-          Keyword rich and highly optimized. Built with next.js
+          Another performant landing page. Built with next.js
         </ListItem>
       </div>
     </div>
