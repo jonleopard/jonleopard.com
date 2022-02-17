@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo'
 import 'twin.macro'
-import { Intro, RandomBits } from '../components/About'
+import { Intro } from '../components/About'
 import { getLayout } from '../components/SiteLayout'
 import routes from '../config/routes'
 
@@ -15,7 +15,6 @@ function About() {
       <div tw="max-w-3xl mx-auto px-4">
         <div tw="grid grid-cols-1 gap-10">
           <Intro />
-          <RandomBits />
         </div>
       </div>
     </>

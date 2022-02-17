@@ -4,6 +4,12 @@ import Image from 'next/image'
 export default function Intro() {
   return (
     <div>
+
+
+
+
+
+
       <h1 tw="block text-5xl font-bold leading-none mb-10">About</h1>
 
       <div tw="grid grid-cols-1 gap-4">
