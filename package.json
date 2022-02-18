@@ -28,7 +28,7 @@
   },
   "pre-commit": "lint:staged && generate",
   "dependencies": {
-    "@headlessui/react": "^1.4.3",
+    "@headlessui/react": "^1.5.0",
     "@popperjs/core": "^2.11.2",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
