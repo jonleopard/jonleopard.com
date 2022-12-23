@@ -53,7 +53,7 @@
     "twin.macro": "^2.8.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.3",
+    "@babel/core": "^7.20.7",
     "@netlify/plugin-nextjs": "^4.25.0",
     "@next/eslint-plugin-next": "^12.3.1",
     "@types/node": "^18.8.5",
