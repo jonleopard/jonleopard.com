@@ -11,13 +11,13 @@ const CustomStyles = createGlobalStyle`
 `
 
 const Provider = ({ children }) => {
-  return (
-    <PlausibleProvider domain="jonleopard.com">
-      <SEO />
-      <BaseStyles />
-      <CustomStyles />
-      {children}
-    </PlausibleProvider>
-  )
+    return (
+        <PlausibleProvider domain="jonleopard.com">
+            <SEO />
+            <BaseStyles />
+            <CustomStyles />
+            {children}
+        </PlausibleProvider>
+    )
 }
 export default Provider
