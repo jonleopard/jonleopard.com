@@ -34,7 +34,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.8",
     "a11y-react-emoji": "^1.2.0",
-    "contentful": "^9.2.14",
+    "contentful": "^9.3.3",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
     "isomorphic-unfetch": "^4.0.1",
