@@ -1,11 +1,26 @@
-import 'twin.macro'
+import "twin.macro";
 
 export default function WorkHistory() {
   return (
     <div>
-      <h1 tw="text-2xl text-gray-900 font-semibold">Work History</h1>
+      <h1 tw="text-2xl text-gray-900 font-semibold pb-2">Work History</h1>
 
       <div tw="grid grid-cols-1 gap-4">
+        <div>
+          <p tw="text-lg">
+            Founded{" "}
+            <a tw="underline" href="https://tinysoftware.io">
+              Tiny Software
+            </a>
+          </p>
+          <p tw="text-gray-600">August 2021 - Present</p>
+        </div>
+
+        <div>
+          <p tw="text-lg">Freelance Developer</p>
+          <p tw="text-gray-600">April 2020 - Present</p>
+        </div>
+
         <div>
           <p tw="text-lg">
             Creationshop • Frontend developer and Project manager
@@ -29,6 +44,7 @@ export default function WorkHistory() {
           <p tw="text-lg">GoingUP • Frontend designer & Project manager</p>
           <p tw="text-gray-600">May 2009 - November 2010</p>
         </div>
+
         <div>
           <a
             tw="text-blue-600 text-lg"
@@ -41,5 +57,5 @@ export default function WorkHistory() {
         </div>
       </div>
     </div>
-  )
+  );
 }

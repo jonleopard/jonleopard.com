@@ -4,7 +4,7 @@ import ListItem from './ListItem'
 export default function OSSProjects() {
   return (
     <div>
-      <h1 tw="text-2xl text-gray-900 font-semibold mb-1">
+      <h1 tw="text-2xl text-gray-900 font-semibold pb-2">
         Open Source Projects
       </h1>
       <div tw="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">

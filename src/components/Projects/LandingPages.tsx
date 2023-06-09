@@ -4,7 +4,7 @@ import ListItem from './ListItem'
 export default function LandingPages() {
   return (
     <div>
-      <h1 tw="text-2xl text-gray-900 font-semibold mb-1">Landing Pages</h1>
+      <h1 tw="text-2xl text-gray-900 font-semibold pb-2">Landing Pages</h1>
       <div tw="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
         <ListItem
           symbol="🧊"
