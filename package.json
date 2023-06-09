@@ -54,6 +54,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
+    "@babel/plugin-syntax-typescript": "^7.22.5",
     "@netlify/plugin-nextjs": "^4.24.3",
     "@next/eslint-plugin-next": "^12.3.1",
     "@types/node": "^18.8.4",
