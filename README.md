@@ -20,8 +20,6 @@ This is the source code for [jonleopard.com](https://jonleopard.com).
   - [Contentful](https://www.contentful.com/)
 - Styling
   - [TailwindCSS](https://tailwindcss.com/)
-  - [twin.macro](https://github.com/ben-rogerson/twin.macro)
-  - [Styled Components](https://styled-components.com/)
 - Hosting
   - [Netlify](https://www.netlify.com/)
 - intel Pentium 4 HT inside
