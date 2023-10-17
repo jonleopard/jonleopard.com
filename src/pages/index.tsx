@@ -19,28 +19,6 @@ function Index() {
                 crafting great web experiences.
               </span>
             </h1>
-            <p tw="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              I’m currently seeking a new role. An ideal position would be
-              something that involves:
-              <ul>
-                <li>- React stack (Next.js)</li>
-                <li>- Typescript</li>
-                <li>- Golang (api work)</li>
-                <li>- Small to meduim sized team</li>
-                <li>- Remote or Phoenix/Scottsdale area</li>
-              </ul>
-              <p tw="mt-3">
-                If you or anyone you know is looking for a web developer, you can
-                find me at{" "}
-                <a
-                  tw="underline"
-                  href="https://www.linkedin.com/in/jonathan-leopard/"
-                >
-                  LinkedIn
-                </a>{" "}
-                or send me a line at work(at)jonleopard.com!
-              </p>
-            </p>
             <div tw="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div tw="mt-3 sm:mt-0">
                 <Link href="/about">
