@@ -10,9 +10,8 @@ export default function Intro() {
         <p>
           My career started as a web designer in 2009. Back in the days when
           photoshop reigned king, and slicing up .psd files was common practice.
-          In mid 2015, I switched gears and went in all in with programming. I
-          specialize in Javascript/React(Next.js) and would like to eventually
-          transition to a full time backend role using Go.
+          In mid 2015, I switched gears and went in all in with programming. I develop
+          consumable APIs and web applications with Node.js, TypeScript, and Go.
         </p>
         <p>
           I was an expat in Paris, France from 2012 to 2022 and have since moved
