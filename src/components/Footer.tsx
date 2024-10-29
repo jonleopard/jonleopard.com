@@ -61,14 +61,6 @@ function Footer() {
           </span>
         </div>
       </div>
-      <div tw="grid grid-cols-1 gap-1">
-        <Line height="6px" color="#62BB47" />
-        <Line height="5px" color="#FCB827" />
-        <Line height="4px" color="#F6821F" />
-        <Line height="3px" color="#E03A3E" />
-        <Line height="2px" color="#963D97" />
-        <Line height="1px" color="#009ddc" />
-      </div>
     </footer>
   );
 }
