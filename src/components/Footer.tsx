@@ -10,15 +10,7 @@ import {
 import styled from "styled-components";
 import "twin.macro";
 
-interface LineProps {
-  height: string;
-  color: string;
-}
 
-const Line = styled.hr`
-  border-top: ${(props: LineProps) => props.height} solid
-    ${(props: LineProps) => props.color};
-`;
 
 function Footer() {
   const WHAT_YEAR_IS_IT = new Date().getFullYear();
