@@ -7,7 +7,6 @@ import {
   FaTelegram,
   FaTwitter,
 } from "react-icons/fa";
-import styled from "styled-components";
 import "twin.macro";
 
 
